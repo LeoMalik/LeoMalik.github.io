@@ -298,6 +298,756 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/卡塔兰数.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LeoMalik">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1fzshc4efd3j20hs0hs3yr.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="星球飙车💫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/卡塔兰数.html" itemprop="url">卡塔兰数</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-08T21:07:53+08:00">
+                2019-02-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T21:22:38+08:00">
+                2019-02-08
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/卡塔兰数.html" class="leancloud_visitors" data-flag-title="卡塔兰数">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="卡塔兰数"><a href="#卡塔兰数" class="headerlink" title="卡塔兰数"></a>卡塔兰数</h3><p>卡塔兰数是一种常在技术问题中出现的数列，一般做到类似以下模型的时候套用公式即可：<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57de4926a69e67cdcdf999030c5ec3c25d97b0c9" alt=""></p>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><p><a href="https://zh.wikipedia.org/wiki/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6" rel="external nofollow noopener noreferrer" target="_blank">组合数学</a>中有非常多的组合结构可以用卡塔兰数来计数。在Richard P. Stanley的Enumerative Combinatorics: Volume 2一书的习题中包括了66个相异的可由卡塔兰数表达的组合结构。以下用n=3和n=4举若干例：</p>
+<ul>
+<li><em>C**n</em>表示长度<em>2n</em>的dyck word的个数。Dyck word是一个有<em>n</em>个X和<em>n</em>个Y组成的字串，且所有的前缀字串皆满足X的个数大于等于Y的个数。以下为长度为6的dyck words:</li>
+</ul>
+<p>XXXYYY XYXXYY XYXYXY XXYYXY XXYXYY</p>
+<ul>
+<li>将上例的X换成左括号，Y换成右括号，<em>C**n</em>表示所有包含<em>n</em>组括号的合法运算式的个数：</li>
+</ul>
+<p>((())) ()(()) ()()() (())() (()())</p>
+<ul>
+<li><p><em>C**n</em>表示有<em>n</em>个节点组成不同构<a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91" rel="external nofollow noopener noreferrer" target="_blank">二叉树</a>的方案数。下图中，<em>n</em>等于<em>3</em>，圆形表示节点，月牙形表示什么都没有。</p>
+</li>
+<li><p><em>C**n</em>表示有<em>2n+1</em>个节点组成不同构满<a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91" rel="external nofollow noopener noreferrer" target="_blank">二叉树</a>（full binary tree）的方案数。下图中，<em>n</em>等于<em>3</em>，圆形表示内部节点，月牙形表示外部节点。本质同上。</p>
+</li>
+</ul>
+<p><a href="https://zh.wikipedia.org/wiki/File:Catalan_number_binary_tree_example.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Catalan_number_binary_tree_example.png" alt="Catalan number binary tree example.png"></a></p>
+<p><em>证明：</em></p>
+<p>令1表示进栈，0表示出栈，则可转化为求一个<em>2n</em>位、含<em>n</em>个1、<em>n</em>个0的二进制数，满足从左往右扫描到任意一位时，经过的0数不多于1数。显然含<em>n</em>个1、<em>n</em>个0的<em>2n</em>位二进制数共有{\displaystyle {2n \choose n}}<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/368fc291485cdb1e3fa50b38ff3b6e565a3d7d31" alt="{2n \choose n}">个，下面考虑不满足要求的数目。</p>
+<p>考虑一个含<em>n</em>个1、<em>n</em>个0的2n位二进制数，扫描到第<em>2m+1</em>位上时有<em>m+1</em>个0和<em>m</em>个1（容易证明一定存在这样的情况），则后面的0-1排列中必有<em>n-m</em>个1和<em>n-m-1</em>个0。将<em>2m+2</em>及其以后的部分0变成1、1变成0，则对应一个<em>n+1</em>个0和<em>n-1</em>个1的二进制数。反之亦然（相似的思路证明两者一一对应）。</p>
+<p>从而{\displaystyle C_{n}={2n \choose n}-{2n \choose n+1}={\frac {1}{n+1}}{2n \choose n}}<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b407b1e2725b1fc3e8ddf194f04e5d08a4ae7563" alt="C_n = {2n \choose n} - {2n \choose n + 1} = \frac{1}{n+1}{2n \choose n}">。证毕。</p>
+<ul>
+<li><em>C**n</em>表示所有在<em>n</em> × <em>n</em>格点中不越过对角线的<strong>单调路径</strong>的个数。一个单调路径从格点左下角出发，在格点右上角结束，每一步均为向上或向右。计算这种路径的个数等价于计算Dyck word的个数：X代表“向右”，Y代表“向上”。下图为<em>n</em> = 4的情况：</li>
+</ul>
+<p><a href="https://zh.wikipedia.org/wiki/File:Catalan_number_4x4_grid_example.svg" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Catalan_number_4x4_grid_example.svg/450px-Catalan_number_4x4_grid_example.svg.png" alt="Catalan number 4x4 grid example.svg"></a></p>
+<ul>
+<li><em>C**n</em>表示通过连结顶点而将<em>n</em> + 2边的<a href="https://zh.wikipedia.org/wiki/%E5%87%B8%E5%A4%9A%E8%BE%B9%E5%BD%A2" rel="external nofollow noopener noreferrer" target="_blank">凸多边形</a>分成<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88%E5%87%A0%E4%BD%95%EF%BC%89&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">三角形</a>的方法个数。下图中为<em>n</em> = 4的情况：</li>
+</ul>
+<p><a href="https://zh.wikipedia.org/wiki/File:Catalan-Hexagons-example.svg" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Catalan-Hexagons-example.svg/400px-Catalan-Hexagons-example.svg.png" alt="Catalan-Hexagons-example.svg"></a></p>
+<ul>
+<li><p><em>C**n</em>表示对{1, …, <em>n</em>}依序进出<a href="https://zh.wikipedia.org/wiki/%E6%A0%88" rel="external nofollow noopener noreferrer" target="_blank">栈</a>的<a href="https://zh.wikipedia.org/wiki/%E7%BD%AE%E6%8D%A2" rel="external nofollow noopener noreferrer" target="_blank">置换</a>个数。一个置换<em>w</em>是依序进出栈的当<em>S</em>(<em>w</em>) = (1, …, <em>n</em>),其中<em>S</em>（<em>w</em>）递归定义如下：令<em>w</em> = <em>unv</em>，其中<em>n</em>为<em>w</em>的最大元素，<em>u</em>和<em>v</em>为更短的数列；再令<em>S</em>(<em>w</em>) = <em>S</em>(<em>u</em>)<em>S</em>(<em>v</em>)<em>n</em>，其中<em>S</em>为所有含一个元素的数列的单位元。</p>
+</li>
+<li><p><em>C**n</em>表示集合{1, …, <em>n</em>}的<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%8D%E4%BA%A4%E5%8F%89%E5%88%92%E5%88%86&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">不交叉划分</a>的个数.那么, <em>C**n</em>永远不大于第<em>n</em>项<a href="https://zh.wikipedia.org/wiki/%E8%B4%9D%E5%B0%94%E6%95%B0" rel="external nofollow noopener noreferrer" target="_blank">贝尔数</a>. <em>C**n</em>也表示集合{1, …, 2<em>n</em>}的<a href="https://zh.wikipedia.org/w/index.php?title=%E4%B8%8D%E4%BA%A4%E5%8F%89%E5%88%92%E5%88%86&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">不交叉划分</a>的个数，其中每个段落的长度为2。综合这两个结论，可以用<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95" rel="external nofollow noopener noreferrer" target="_blank">数学归纳法</a>证明：在 <a href="https://zh.wikipedia.org/w/index.php?title=%E9%AD%8F%E6%A0%BC%E7%BA%B3%E5%8D%8A%E5%9C%86%E5%88%86%E5%B8%83%E5%AE%9A%E5%BE%8B&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">魏格纳半圆分布定律</a> 中度数大于2的情形下，所有 <em>自由的</em> <a href="https://zh.wikipedia.org/wiki/%E7%B4%AF%E7%A7%AF%E9%87%8F" rel="external nofollow noopener noreferrer" target="_blank">累积量</a>s 为零。 该定律在 <a href="https://zh.wikipedia.org/w/index.php?title=%E8%87%AA%E7%94%B1%E6%A6%82%E7%8E%87%E8%AE%BA&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">自由概率论</a> 和 <a href="https://zh.wikipedia.org/wiki/%E9%9A%8F%E6%9C%BA%E7%9F%A9%E9%98%B5" rel="external nofollow noopener noreferrer" target="_blank">随机矩阵</a> 理论中非常重要。</p>
+</li>
+<li><p><em>C**n</em>表示用<em>n</em>个长方形填充一个高度为<em>n</em>的阶梯状图形的方法个数。下图为<em>n</em> = 4的情况：</p>
+</li>
+</ul>
+<p><a href="https://zh.wikipedia.org/wiki/File:Catalan_stairsteps_4.svg" rel="external nofollow noopener noreferrer" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Catalan_stairsteps_4.svg/400px-Catalan_stairsteps_4.svg.png" alt="Catalan stairsteps 4.svg"></a></p>
+<ul>
+<li><p><em>C**n</em>表示表为2×<em>n</em>的矩阵的标准<a href="https://zh.wikipedia.org/wiki/%E6%9D%A8%E6%B0%8F%E7%9F%A9%E9%98%B5" rel="external nofollow noopener noreferrer" target="_blank">杨氏矩阵</a>的数量。 也就是说，它是数字 1, 2, …, 2<em>n</em> 被放置在一个2×<em>n</em>的矩形中并保证每行每列的数字升序排列的方案数。同样的，该式可由<a href="https://zh.wikipedia.org/wiki/%E6%9D%A8%E6%B0%8F%E7%9F%A9%E9%98%B5" rel="external nofollow noopener noreferrer" target="_blank">勾长公式</a>的一个特殊情形推导得出。</p>
+</li>
+<li><p><em>C**n</em>表示<em>n</em>个无标号物品的<a href="https://zh.wikipedia.org/w/index.php?title=%E5%8D%8A%E5%BA%8F&amp;action=edit&amp;redlink=1" rel="external nofollow noopener noreferrer" target="_blank">半序</a>的个数。</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/二分图最大匹配-匈牙利算法.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LeoMalik">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1fzshc4efd3j20hs0hs3yr.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="星球飙车💫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/二分图最大匹配-匈牙利算法.html" itemprop="url">二分图最大匹配与匈牙利算法</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-08T20:54:57+08:00">
+                2019-02-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T21:22:40+08:00">
+                2019-02-08
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/二分图最大匹配-匈牙利算法.html" class="leancloud_visitors" data-flag-title="二分图最大匹配与匈牙利算法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>推荐阅读：<a href="https://www.renfei.org/blog/bipartite-matching.html" rel="external nofollow noopener noreferrer" target="_blank">二分图的最大匹配、完美匹配和匈牙利算法</a></p>
+<h3 id="匈牙利算法"><a href="#匈牙利算法" class="headerlink" title="匈牙利算法"></a>匈牙利算法</h3><p>匈牙利算法是由匈牙利数学家Edmonds于1965年提出，因而得名。匈牙利算法是基于Hall定理中充分性证明的思想，它是部图匹配最常见的算法，该算法的核心就是寻找增广路径，它是一种用增广路径求二分图最大匹配的算法。</p>
+<p>——-等等，看得头大？那么请看下面的版本：</p>
+<p>通过数代人的努力，你终于赶上了剩男剩女的大潮，假设你是一位光荣的新世纪媒人，在你的手上有N个剩男，M个剩女，每个人都可能对多名异性有好感（-_-||暂时不考虑特殊的性取向），如果一对男女互有好感，那么你就可以把这一对撮合在一起，现在让我们无视掉所有的单相思（好忧伤的感觉），你拥有的大概就是下面这样一张关系图，每一条连线都表示互有好感。</p>
+<p><img src="https://img-blog.csdn.net/20130503155150538" alt=""></p>
+<p>本着救人一命，胜造七级浮屠的原则，你想要尽可能地撮合更多的情侣，匈牙利算法的工作模式会教你这样做：</p>
+<p>===============================================================================</p>
+<p>一： 先试着给1号男生找妹子，发现第一个和他相连的1号女生还名花无主，got it，连上一条蓝线</p>
+<p><img src="https://img-blog.csdn.net/20130503155256629" alt=""></p>
+<p>===============================================================================</p>
+<p>二：接着给2号男生找妹子，发现第一个和他相连的2号女生名花无主，got it</p>
+<p><img src="https://img-blog.csdn.net/20130503155344972" alt=""></p>
+<p>===============================================================================</p>
+<p>三：接下来是3号男生，很遗憾1号女生已经有主了，怎么办呢？</p>
+<p>我们试着给之前1号女生匹配的男生（也就是1号男生）另外分配一个妹子。</p>
+<p>(黄色表示这条边被临时拆掉)</p>
+<p><img src="https://img-blog.csdn.net/20130503155428908" alt=""></p>
+<p>与1号男生相连的第二个女生是2号女生，但是2号女生也有主了，怎么办呢？我们再试着给2号女生的原配()重新找个妹子(注意这个步骤和上面是一样的，这是一个递归的过程)</p>
+<p><img src="https://img-blog.csdn.net/20130503155441032" alt=""></p>
+<p>此时发现2号男生还能找到3号女生，那么之前的问题迎刃而解了，回溯回去</p>
+<p>2号男生可以找3号妹子~              1号男生可以找2号妹子了~        3号男生可以找1号妹子</p>
+<p><img src="https://img-blog.csdn.net/20130503155453501" alt=""><img src="https://img-blog.csdn.net/20130503155626560" alt=""><img src="https://img-blog.csdn.net/20130503162147840" alt=""></p>
+<p>所以第三步最后的结果就是：</p>
+<p><img src="https://img-blog.csdn.net/20130503160156253" alt=""></p>
+<p>===============================================================================</p>
+<p>四： 接下来是4号男生，很遗憾，按照第三步的节奏我们没法给4号男生腾出来一个妹子，我们实在是无能为力了……香吉士同学走好。</p>
+<p>===============================================================================</p>
+<p>这就是匈牙利算法的流程，其中找妹子是个递归的过程，最最关键的字就是“腾”字<br>其原则大概是：有机会上，没机会创造机会也要上</p>
+<p>【code】</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,j;</span><br><span class="line">	<span class="keyword">for</span> (j=<span class="number">1</span>;j&lt;=m;j++)&#123;    <span class="comment">//扫描每个妹子</span></span><br><span class="line">		<span class="keyword">if</span> (line[x][j]==<span class="literal">true</span> &amp;&amp; used[j]==<span class="literal">false</span>)      </span><br><span class="line">		<span class="comment">//如果有暧昧并且还没有标记过(这里标记的意思是这次查找曾试图改变过该妹子的归属问题，但是没有成功，所以就不用瞎费工夫了）</span></span><br><span class="line">		&#123;</span><br><span class="line">			used[j]=<span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (girl[j]==<span class="number">0</span> || find(girl[j])) &#123; </span><br><span class="line">				<span class="comment">//名花无主或者能腾出个位置来，这里使用递归</span></span><br><span class="line">				girl[j]=x;</span><br><span class="line">				<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在主程序我们这样做：每一步相当于我们上面描述的一二三四中的一步</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">memset</span>(used,<span class="number">0</span>,<span class="keyword">sizeof</span>(used));    <span class="comment">//这个在每一步中清空</span></span><br><span class="line">	if find(i) all+=1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二分图的最大匹配、完美匹配和匈牙利算法"><a href="#二分图的最大匹配、完美匹配和匈牙利算法" class="headerlink" title="二分图的最大匹配、完美匹配和匈牙利算法"></a>二分图的最大匹配、完美匹配和匈牙利算法</h3><p>这篇文章讲无权二分图（unweighted bipartite graph）的最大匹配（maximum matching）和完美匹配（perfect matching），以及用于求解匹配的匈牙利算法（Hungarian Algorithm）；不讲带权二分图的最佳匹配。</p>
+<p><strong>二分图</strong>：简单来说，如果图中点可以被分为两组，并且使得所有边都跨越组的边界，则这就是一个二分图。准确地说：把一个图的顶点划分为两个不相交集 $U$ 和$V$ ，使得每一条边都分别连接$U$、$V$中的顶点。如果存在这样的划分，则此图为一个二分图。二分图的一个等价定义是：不含有「含奇数条边的环」的图。图 1 是一个二分图。为了清晰，我们以后都把它画成图 2 的形式。</p>
+<p><strong>匹配</strong>：在图论中，一个「匹配」（matching）是一个边的集合，其中任意两条边都没有公共顶点。例如，图 3、图 4 中红色的边就是图 2 的匹配。</p>
+<p><img src="https://img.renfei.org/2013/08/1.png" alt="Bipartite Graph(1)">  <img src="https://img.renfei.org/2013/08/2.png" alt="Bipartite Graph(2)">  <img src="https://img.renfei.org/2013/08/3.png" alt="Matching">  <img src="https://img.renfei.org/2013/08/4.png" alt="Maximum Matching"></p>
+<p>我们定义<strong>匹配点</strong>、<strong>匹配边</strong>、<strong>未匹配点</strong>、<strong>非匹配边</strong>，它们的含义非常显然。例如图 3 中 1、4、5、7 为匹配点，其他顶点为未匹配点；1-5、4-7为匹配边，其他边为非匹配边。</p>
+<p><strong>最大匹配</strong>：一个图所有匹配中，所含匹配边数最多的匹配，称为这个图的最大匹配。图 4 是一个最大匹配，它包含 4 条匹配边。</p>
+<p><strong>完美匹配</strong>：如果一个图的某个匹配中，所有的顶点都是匹配点，那么它就是一个完美匹配。图 4 是一个完美匹配。显然，完美匹配一定是最大匹配（完美匹配的任何一个点都已经匹配，添加一条新的匹配边一定会与已有的匹配边冲突）。但并非每个图都存在完美匹配。</p>
+<p>举例来说：如下图所示，如果在某一对男孩和女孩之间存在相连的边，就意味着他们彼此喜欢。是否可能让所有男孩和女孩两两配对，使得每对儿都互相喜欢呢？图论中，这就是<strong>完美匹配</strong>问题。如果换一个说法：最多有多少互相喜欢的男孩/女孩可以配对儿？这就是<strong>最大匹配</strong>问题。</p>
+<p><img src="https://img.renfei.org/2013/08/0.png" alt="0"></p>
+<p>基本概念讲完了。求解最大匹配问题的一个算法是<strong>匈牙利算法</strong>，下面讲的概念都为这个算法服务。</p>
+<p><img src="https://img.renfei.org/2013/08/5.png" alt="5"></p>
+<p><strong>交替路</strong>：从一个未匹配点出发，依次经过非匹配边、匹配边、非匹配边…形成的路径叫交替路。</p>
+<p><strong>增广路</strong>：从一个未匹配点出发，走交替路，如果途径另一个未匹配点（出发的点不算），则这条交替路称为增广路（agumenting path）。例如，图 5 中的一条增广路如图 6 所示（图中的匹配点均用红色标出）：</p>
+<p><img src="https://img.renfei.org/2013/08/6.png" alt="6"></p>
+<p>增广路有一个重要特点：非匹配边比匹配边多一条。因此，研究增广路的意义是<strong>改进匹配</strong>。只要把增广路中的匹配边和非匹配边的身份交换即可。由于中间的匹配节点不存在其他相连的匹配边，所以这样做不会破坏匹配的性质。交换后，图中的匹配边数目比原来多了 1 条。</p>
+<p>我们可以通过不停地找增广路来增加匹配中的匹配边和匹配点。找不到增广路时，达到最大匹配（这是增广路定理）。匈牙利算法正是这么做的。在给出匈牙利算法 DFS 和 BFS 版本的代码之前，先讲一下匈牙利树。</p>
+<p><strong>匈牙利树</strong>一般由 BFS 构造（类似于 BFS 树）。从一个未匹配点出发运行 BFS（唯一的限制是，必须走交替路），直到不能再扩展为止。例如，由图 7，可以得到如图 8 的一棵 BFS 树：</p>
+<p><img src="https://img.renfei.org/2013/08/7.png" alt="7">   <img src="https://img.renfei.org/2013/08/8.png" alt="8">    <img src="https://img.renfei.org/2013/08/9.png" alt="9"></p>
+<p>这棵树存在一个叶子节点为非匹配点（7 号），但是匈牙利树要求所有叶子节点均为匹配点，因此这不是一棵匈牙利树。如果原图中根本不含 7 号节点，那么从 2 号节点出发就会得到一棵匈牙利树。这种情况如图 9 所示（顺便说一句，图 8 中根节点 2 到非匹配叶子节点 7 显然是一条增广路，沿这条增广路扩充后将得到一个完美匹配）。</p>
+<p>下面给出<strong>匈牙利算法</strong>的 DFS 和 BFS 版本的代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 顶点、边的编号均从 0 开始</span></span><br><span class="line"><span class="comment">// 邻接表储存</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> from;</span><br><span class="line">    <span class="keyword">int</span> to;</span><br><span class="line">    <span class="keyword">int</span> weight;</span><br><span class="line"></span><br><span class="line">    Edge(<span class="keyword">int</span> f, <span class="keyword">int</span> t, <span class="keyword">int</span> w):from(f), to(t), weight(w) &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; G[__maxNodes]; <span class="comment">/* G[i] 存储顶点 i 出发的边的编号 */</span></span><br><span class="line"><span class="built_in">vector</span>&lt;Edge&gt; edges;</span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator <span class="keyword">iterator_t</span>;</span><br><span class="line"><span class="keyword">int</span> num_nodes;</span><br><span class="line"><span class="keyword">int</span> num_left;</span><br><span class="line"><span class="keyword">int</span> num_right;</span><br><span class="line"><span class="keyword">int</span> num_edges;</span><br><span class="line"><span class="keyword">int</span> matching[__maxNodes]; <span class="comment">/* 存储求解结果 */</span></span><br><span class="line"><span class="keyword">int</span> check[__maxNodes];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">iterator_t</span> i = G[u].begin(); i != G[u].end(); ++i) &#123; <span class="comment">// 对 u 的每个邻接点</span></span><br><span class="line">        <span class="keyword">int</span> v = edges[*i].to;</span><br><span class="line">        <span class="keyword">if</span> (!check[v]) &#123;     <span class="comment">// 要求不在交替路中</span></span><br><span class="line">            check[v] = <span class="literal">true</span>; <span class="comment">// 放入交替路</span></span><br><span class="line">            <span class="keyword">if</span> (matching[v] == <span class="number">-1</span> || dfs(matching[v])) &#123;</span><br><span class="line">                <span class="comment">// 如果是未盖点，说明交替路为增广路，则交换路径，并返回成功</span></span><br><span class="line">                matching[v] = u;</span><br><span class="line">                matching[u] = v;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">// 不存在增广路，返回失败</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hungarian</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(matching, <span class="number">-1</span>, <span class="keyword">sizeof</span>(matching));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> u=<span class="number">0</span>; u &lt; num_left; ++u) &#123;</span><br><span class="line">        <span class="keyword">if</span> (matching[u] == <span class="number">-1</span>) &#123;</span><br><span class="line">            <span class="built_in">memset</span>(check, <span class="number">0</span>, <span class="keyword">sizeof</span>(check));</span><br><span class="line">            <span class="keyword">if</span> (dfs(u))</span><br><span class="line">                ++ans;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; Q;</span><br><span class="line"><span class="keyword">int</span> prev[__maxNodes];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Hungarian</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(matching, <span class="number">-1</span>, <span class="keyword">sizeof</span>(matching));</span><br><span class="line">    <span class="built_in">memset</span>(check, <span class="number">-1</span>, <span class="keyword">sizeof</span>(check));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;num_left; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (matching[i] == <span class="number">-1</span>) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!Q.empty()) Q.pop();</span><br><span class="line">            Q.push(i);</span><br><span class="line">            prev[i] = <span class="number">-1</span>; <span class="comment">// 设 i 为路径起点</span></span><br><span class="line">            <span class="keyword">bool</span> flag = <span class="literal">false</span>; <span class="comment">// 尚未找到增广路</span></span><br><span class="line">            <span class="keyword">while</span> (!Q.empty() &amp;&amp; !flag) &#123;</span><br><span class="line">                <span class="keyword">int</span> u = Q.front();</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">iterator_t</span> ix = G[u].begin(); ix != G[u].end() &amp;&amp; !flag; ++ix) &#123;</span><br><span class="line">                    <span class="keyword">int</span> v = edges[*ix].to;</span><br><span class="line">                    <span class="keyword">if</span> (check[v] != i) &#123;</span><br><span class="line">                        check[v] = i;</span><br><span class="line">                        Q.push(matching[v]);</span><br><span class="line">                        <span class="keyword">if</span> (matching[v] &gt;= <span class="number">0</span>) &#123; <span class="comment">// 此点为匹配点</span></span><br><span class="line">                            prev[matching[v]] = u;</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123; <span class="comment">// 找到未匹配点，交替路变为增广路</span></span><br><span class="line">                            flag = <span class="literal">true</span>;</span><br><span class="line">                            <span class="keyword">int</span> d=u, e=v;</span><br><span class="line">                            <span class="keyword">while</span> (d != <span class="number">-1</span>) &#123;</span><br><span class="line">                                <span class="keyword">int</span> t = matching[d];</span><br><span class="line">                                matching[d] = e;</span><br><span class="line">                                matching[e] = d;</span><br><span class="line">                                d = prev[d];</span><br><span class="line">                                e = t;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                Q.pop();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (matching[i] != <span class="number">-1</span>) ++ans;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>匈牙利算法的要点如下</strong></p>
+<ol>
+<li>从左边第 1 个顶点开始，挑选未匹配点进行搜索，寻找增广路。<ol>
+<li>如果经过一个未匹配点，说明寻找成功。更新路径信息，匹配边数 +1，停止搜索。</li>
+<li>如果一直没有找到增广路，则不再从这个点开始搜索。事实上，此时搜索后会形成一棵匈牙利树。我们可以永久性地把它从图中删去，而不影响结果。</li>
+</ol>
+</li>
+<li>由于找到增广路之后需要沿着路径更新匹配，所以我们需要一个结构来记录路径上的点。DFS 版本通过函数调用隐式地使用一个栈，而 BFS 版本使用 <code>prev</code> 数组。</li>
+</ol>
+<p><strong>性能比较</strong></p>
+<p>两个版本的时间复杂度均为$O\big(V \cdot E\big)$。DFS 的优点是思路清晰、代码量少，但是性能不如 BFS。我测试了两种算法的性能。对于稀疏图，BFS 版本明显快于 DFS 版本；而对于稠密图两者则不相上下。在完全随机数据 9000 个顶点 4,0000 条边时前者领先后者大约 97.6%，9000 个顶点 100,0000 条边时前者领先后者 8.6%, 而达到 500,0000 条边时 BFS 仅领先 0.85%。</p>
+<p>补充定义和定理：</p>
+<p><strong>最大匹配数</strong>：最大匹配的匹配边的数目</p>
+<p><strong>最小点覆盖数</strong>：选取最少的点，使任意一条边至少有一个端点被选择</p>
+<p><strong>最大独立数</strong>：选取最多的点，使任意所选两点均不相连</p>
+<p><strong>最小路径覆盖数</strong>：对于一个 DAG（有向无环图），选取最少条路径，使得每个顶点属于且仅属于一条路径。路径长可以为 0（即单个点）。</p>
+<p>定理1：最大匹配数 = 最小点覆盖数（这是 Konig 定理）</p>
+<p>定理2：最大匹配数 = 最大独立数</p>
+<p>定理3：最小路径覆盖数 = 顶点数 - 最大匹配数</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/Dijkstra-最短路径算法.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LeoMalik">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1fzshc4efd3j20hs0hs3yr.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="星球飙车💫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/Dijkstra-最短路径算法.html" itemprop="url">Dijkstra-最短路径算法</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-08T20:50:03+08:00">
+                2019-02-08
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T21:22:35+08:00">
+                2019-02-08
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/Dijkstra-最短路径算法.html" class="leancloud_visitors" data-flag-title="Dijkstra-最短路径算法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>推荐阅读，转自:<a href="http://ahalei.blog.51cto.com/4767671/1387799" rel="external nofollow noopener noreferrer" target="_blank">【啊哈！算法】系列7：Dijkstra最短路算法</a></p>
+<p>上周我们介绍了神奇的只有五行的Floyd最短路算法，它可以方便的求得任意两点的最短路径，这称为“多源最短路”。本周来来介绍指定一个点（源点）到其余各个顶点的最短路径，也叫做“单源最短路径”。例如求下图中的1号顶点到2、3、4、5、6号顶点的最短路径。</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090644t797fce7n20of7j9.png" alt="090644t797fce7n20of7j9.png"></p>
+<p>​       与Floyd-Warshall算法一样这里仍然使用二维数组e来存储顶点之间边的关系，初始值如下。</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090651l6pt4666tptut66u.png" alt="090651l6pt4666tptut66u.png"></p>
+<p>​       我们还需要用一个一维数组dis来存储1号顶点到其余各个顶点的初始路程，如下。</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090657ofidcactthcig33i.png" alt="090657ofidcactthcig33i.png"></p>
+<p>​       我们将此时dis数组中的值称为最短路的“估计值”。</p>
+<p>​       既然是求1号顶点到其余各个顶点的最短路程，那就先找一个离1号顶点最近的顶点。通过数组dis可知当前离1号顶点最近是2号顶点。当选择了2号顶点后，dis[2]的值就已经从“估计值”变为了“确定值”，即1号顶点到2号顶点的最短路程就是当前dis[2]值。为什么呢？你想啊，目前离1号顶点最近的是2号顶点，并且这个图所有的边都是正数，那么肯定不可能通过第三个顶点中转，使得1号顶点到2号顶点的路程进一步缩短了。因为1号顶点到其它顶点的路程肯定没有1号到2号顶点短，对吧O(∩_∩)O~</p>
+<p>​       既然选了2号顶点，接下来再来看2号顶点有哪些出边呢。有2-&gt;3和2-&gt;4这两条边。先讨论通过2-&gt;3这条边能否让1号顶点到3号顶点的路程变短。也就是说现在来比较dis[3]和dis[2]+e[2] [3]的大小。其中dis[3]表示1号顶点到3号顶点的路程。dis[2]+e[2] [3]中dis[2]表示1号顶点到2号顶点的路程，e[2] [3]表示2-&gt;3这条边。所以dis[2]+e[2] [3]就表示从1号顶点先到2号顶点，再通过2-&gt;3这条边，到达3号顶点的路程。</p>
+<p>​       我们发现dis[3]=12，dis[2]+e[2] [3]=1+9=10，dis[3]&gt;dis[2]+e[2] [3]，因此dis[3]要更新为10。这个过程有个专业术语叫做“松弛”。即1号顶点到3号顶点的路程即dis[3]，通过2-&gt;3这条边松弛成功。这便是Dijkstra算法的主要思想：通过“边”来松弛1号顶点到其余各个顶点的路程。</p>
+<p>​       同理通过2-&gt;4（e[2] [4]），可以将dis[4]的值从∞松弛为4（dis[4]初始为∞，dis[2]+e[2] [4]=1+3=4，dis[4]&gt;dis[2]+e[2] [4]，因此dis[4]要更新为4）。</p>
+<p>​       刚才我们对2号顶点所有的出边进行了松弛。松弛完毕之后dis数组为：</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090706vmjy7l2ee2lyalia.png" alt="090706vmjy7l2ee2lyalia.png"></p>
+<p>​       接下来，继续在剩下的3、4、5和6号顶点中，选出离1号顶点最近的顶点。通过上面更新过dis数组，当前离1号顶点最近是4号顶点。此时，dis[4]的值已经从“估计值”变为了“确定值”。下面继续对4号顶点的所有出边（4-&gt;3，4-&gt;5和4-&gt;6）用刚才的方法进行松弛。松弛完毕之后dis数组为：</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090714f2p1wppynngj2pep.png" alt="090714f2p1wppynngj2pep.png"></p>
+<p>​       继续在剩下的3、5和6号顶点中，选出离1号顶点最近的顶点，这次选择3号顶点。此时，dis[3]的值已经从“估计值”变为了“确定值”。对3号顶点的所有出边（3-&gt;5）进行松弛。松弛完毕之后dis数组为：</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090722ywunackk35i8cni5.png" alt="090722ywunackk35i8cni5.png"></p>
+<p>​       继续在剩下的5和6号顶点中，选出离1号顶点最近的顶点，这次选择5号顶点。此时，dis[5]的值已经从“估计值”变为了“确定值”。对5号顶点的所有出边（5-&gt;4）进行松弛。松弛完毕之后dis数组为：</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090730eq6oqzyq7laqha9y.png" alt="090730eq6oqzyq7laqha9y.png"></p>
+<p>​       最后对6号顶点所有点出边进行松弛。因为这个例子中6号顶点没有出边，因此不用处理。到此，dis数组中所有的值都已经从“估计值”变为了“确定值”。</p>
+<p>​       最终dis数组如下，这便是1号顶点到其余各个顶点的最短路径。</p>
+<p><img src="http://bbs.ahalei.com/data/attachment/forum/201403/31/090738azt5clcozl899ekt.png" alt="090738azt5clcozl899ekt.png"></p>
+<p>​       OK，现在来总结一下刚才的算法。算法的基本思想是：每次找到离源点（上面例子的源点就是1号顶点）最近的一个顶点，然后以该顶点为中心进行扩展，最终得到源点到其余所有点的最短路径。基本步骤如下：</p>
+<ul>
+<li>将所有的顶点分为两部分：已知最短路程的顶点集合P和未知最短路径的顶点集合Q。最开始，已知最短路径的顶点集合P中只有源点一个顶点。我们这里用一个book[ i ]数组来记录哪些点在集合P中。例如对于某个顶点i，如果book[ i ]为1则表示这个顶点在集合P中，如果book[ i ]为0则表示这个顶点在集合Q中。</li>
+<li>设置源点s到自己的最短路径为0即dis=0。若存在源点有能直接到达的顶点i，则把dis[ i ]设为e[s] [ i ]。同时把所有其它（源点不能直接到达的）顶点的最短路径为设为∞。</li>
+<li>在集合Q的所有顶点中选择一个离源点s最近的顶点u（即dis[u]最小）加入到集合P。并考察所有以点u为起点的边，对每一条边进行松弛操作。例如存在一条从u到v的边，那么可以通过将边u-&gt;v添加到尾部来拓展一条从s到v的路径，这条路径的长度是dis[u]+e[u] [v]。如果这个值比目前已知的dis[v]的值要小，我们可以用新值来替代当前dis[v]中的值。</li>
+<li>重复第3步，如果集合Q为空，算法结束。最终dis数组中的值就是源点到所有顶点的最短路径。</li>
+</ul>
+<p>​       完整的Dijkstra算法代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> e[<span class="number">10</span>][<span class="number">10</span>],dis[<span class="number">10</span>],book[<span class="number">10</span>],i,j,n,m,t1,t2,t3,u,v,min;</span><br><span class="line">    <span class="keyword">int</span> inf=<span class="number">99999999</span>; <span class="comment">//用inf(infinity的缩写)存储一个我们认为的正无穷值</span></span><br><span class="line">    <span class="comment">//读入n和m，n表示顶点个数，m表示边的条数</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;n,&amp;m);</span><br><span class="line">                                                                  </span><br><span class="line">    <span class="comment">//初始化</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">            <span class="keyword">if</span>(i==j) e[i][j]=<span class="number">0</span>;</span><br><span class="line">              <span class="keyword">else</span> e[i][j]=inf;</span><br><span class="line">                                                                            </span><br><span class="line">    <span class="comment">//读入边</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>,&amp;t1,&amp;t2,&amp;t3);</span><br><span class="line">        e[t1][t2]=t3;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//初始化dis数组，这里是1号顶点到其余各个顶点的初始路程</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        dis[i]=e[<span class="number">1</span>][i];</span><br><span class="line">    <span class="comment">//book数组初始化</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        book[i]=<span class="number">0</span>;</span><br><span class="line">    book[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">                                                                  </span><br><span class="line">    <span class="comment">//Dijkstra算法核心语句</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//找到离1号顶点最近的顶点</span></span><br><span class="line">        min=inf;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(book[j]==<span class="number">0</span> &amp;&amp; dis[j]&lt;min)</span><br><span class="line">            &#123;</span><br><span class="line">                min=dis[j];</span><br><span class="line">                u=j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        book[u]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(v=<span class="number">1</span>;v&lt;=n;v++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(e[u][v]&lt;inf)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(dis[v]&gt;dis[u]+e[u][v])</span><br><span class="line">                    dis[v]=dis[u]+e[u][v];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">                                                                  </span><br><span class="line">    <span class="comment">//输出最终的结果</span></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>,dis[i]);</span><br><span class="line">                                                                      </span><br><span class="line">    getchar();</span><br><span class="line">    getchar();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​       可以输入以下数据进行验证。第一行两个整数n  m。n表示顶点个数（顶点编号为1~n），m表示边的条数。接下来m行表示，每行有3个数x y z。表示顶点x到顶点y边的权值为z。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span> <span class="number">9</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">12</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">9</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">5</span> <span class="number">5</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">5</span> <span class="number">13</span></span><br><span class="line"><span class="number">4</span> <span class="number">6</span> <span class="number">15</span></span><br><span class="line"><span class="number">5</span> <span class="number">6</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>​       运行结果是</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span> <span class="number">1</span> <span class="number">8</span> <span class="number">4</span> <span class="number">13</span> <span class="number">17</span></span><br></pre></td></tr></table></figure>
+<p>   通过上面的代码我们可以看出，这个算法的时间复杂度是O(N2)。其中每次找到离1号顶点最近的顶点的时间复杂度是O(N)，这里我们可以用“堆”（以后再说）来优化，使得这一部分的时间复杂度降低到O(logN)。另外对于边数M少于N2的稀疏图来说（我们把M远小于N2的图称为稀疏图，而M相对较大的图称为稠密图），我们可以用邻接表（这是个神马东西？不要着急，下周再仔细讲解）来代替邻接矩阵，使得整个时间复杂度优化到O( (M+N)logN )。请注意！在最坏的情况下M就是N2，这样的话MlogN要比N2还要大。但是大多数情况下并不会有那么多边，因此(M+N)logN要比N2小很多。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/贪心算法.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -345,8 +1095,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-07T23:23:44+08:00">
-                2019-02-07
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T21:22:37+08:00">
+                2019-02-08
               </time>
             
           </span>
@@ -549,8 +1299,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-07T23:10:27+08:00">
-                2019-02-07
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T21:22:43+08:00">
+                2019-02-08
               </time>
             
           </span>
@@ -610,7 +1360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4.2k
+                  5.8k
                 </span>
               
 
@@ -626,7 +1376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  18
+                  26
                 </span>
               
             </div>
@@ -923,7 +1673,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -995,15 +1745,23 @@
         
         
           <li>
+            <a href="/卡塔兰数.html" title="卡塔兰数" target="_blank">卡塔兰数</a>
+          </li>
+        
+          <li>
+            <a href="/二分图最大匹配-匈牙利算法.html" title="二分图最大匹配与匈牙利算法" target="_blank">二分图最大匹配与匈牙利算法</a>
+          </li>
+        
+          <li>
+            <a href="/Dijkstra-最短路径算法.html" title="Dijkstra-最短路径算法" target="_blank">Dijkstra-最短路径算法</a>
+          </li>
+        
+          <li>
             <a href="/贪心算法.html" title="贪心算法" target="_blank">贪心算法</a>
           </li>
         
           <li>
             <a href="/HDU 2000-2099入门笔记.html" title="HDU 2000-2099 入门笔记" target="_blank">HDU 2000-2099 入门笔记</a>
-          </li>
-        
-          <li>
-            <a href="/hello-world.html" title="Hello World" target="_blank">Hello World</a>
           </li>
         
       </ul>
@@ -1050,7 +1808,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.6k</span>
+    <span title="Site words total count">15.4k</span>
   
 </div>
 
