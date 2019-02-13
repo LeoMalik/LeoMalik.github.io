@@ -86,13 +86,13 @@
 
 
 
-<meta name="description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。  首先假设我们有3个 commit  git-log-origin.png 我们需要将 2dfbc7e8 和 c4e">
+<meta name="description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。">
 <meta name="keywords" content="Git,版本控制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git合并多个commit">
 <meta property="og:url" content="http://leomalik.github.io/Git合并多个commit.html">
 <meta property="og:site_name" content="星球飙车💫">
-<meta property="og:description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。  首先假设我们有3个 commit  git-log-origin.png 我们需要将 2dfbc7e8 和 c4e">
+<meta property="og:description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/228805-ffd461efeb8a26a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/228805-e96334b872909dc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
@@ -101,10 +101,10 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/228805-e0ca7e9d694e3f52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/228805-7bb2a59daa90975c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/228805-aa15aa1014eadbcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
-<meta property="og:updated_time" content="2019-02-13T13:39:05.943Z">
+<meta property="og:updated_time" content="2019-02-13T13:40:46.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git合并多个commit">
-<meta name="twitter:description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。  首先假设我们有3个 commit  git-log-origin.png 我们需要将 2dfbc7e8 和 c4e">
+<meta name="twitter:description" content="「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/228805-ffd461efeb8a26a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp">
 
 
@@ -356,7 +356,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-13T21:39:05+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-13T21:40:46+08:00">
                 2019-02-13
               </time>
             
@@ -457,6 +457,7 @@
         <h2 id="「Git」合并多个-Commit"><a href="#「Git」合并多个-Commit" class="headerlink" title="「Git」合并多个 Commit"></a>「Git」合并多个 Commit</h2><blockquote>
 <p>在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。</p>
 </blockquote>
+<a id="more"></a>
 <p>首先假设我们有3个 commit</p>
 <p><img src="https:////upload-images.jianshu.io/upload_images/228805-ffd461efeb8a26a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp" alt="img"></p>
 <p>git-log-origin.png</p>
