@@ -86,26 +86,26 @@
 
 
 
-<meta name="description" content="动态规划和递归效率的比较： 如图所示，递归会重复计算，效率极差：  求解方法： 例题：Unique path  1.初始化：  初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组 初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1 初始化初始值：最一开始的地方有一种走法，d">
+<meta name="description" content="动态规划的四个组成部分：">
 <meta name="keywords" content="算法,动态规划">
 <meta property="og:type" content="article">
 <meta property="og:title" content="动态规划小结">
 <meta property="og:url" content="http://leomalik.github.io/动态规划小结.html">
 <meta property="og:site_name" content="星球飙车💫">
-<meta property="og:description" content="动态规划和递归效率的比较： 如图所示，递归会重复计算，效率极差：  求解方法： 例题：Unique path  1.初始化：  初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组 初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1 初始化初始值：最一开始的地方有一种走法，d">
+<meta property="og:description" content="动态规划的四个组成部分：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g0585av1qsj213f07bjuz.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g057x4f423j211l0jqtcu.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g059v1i6ebj209k0anq44.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058up3cq6j20z80g9n1g.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082gy1g05913xqwtj20mi0ctjur.jpg">
-<meta property="og:updated_time" content="2019-02-13T16:50:59.857Z">
+<meta property="og:updated_time" content="2019-02-13T16:55:02.995Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划小结">
-<meta name="twitter:description" content="动态规划和递归效率的比较： 如图所示，递归会重复计算，效率极差：  求解方法： 例题：Unique path  1.初始化：  初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组 初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1 初始化初始值：最一开始的地方有一种走法，d">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg">
+<meta name="twitter:description" content="动态规划的四个组成部分：">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
 
 
 
@@ -356,7 +356,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-14T00:50:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-14T00:55:02+08:00">
                 2019-02-14
               </time>
             
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  392
+                  399
                 </span>
               
 
@@ -454,10 +454,12 @@
       
 
       
-        <p>动态规划和递归效率的比较：</p>
+        <p>动态规划的四个组成部分：</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
+<a id="more"></a>
+<p>动态规划和递归效率的比较：</p>
 <p>如图所示，递归会重复计算，效率极差：</p>
 <p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg" alt=""></p>
-<h3 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
 <h3 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h3><h3 id="Unique-path"><a href="#Unique-path" class="headerlink" title="Unique path"></a>Unique path</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g0585av1qsj213f07bjuz.jpg" alt=""></p>
 <p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g057x4f423j211l0jqtcu.jpg" alt=""></p>
 <p><strong>1.初始化</strong>：</p>
@@ -671,7 +673,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -758,7 +760,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#求解方法："><span class="nav-number">1.</span> <span class="nav-text">求解方法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题："><span class="nav-number">2.</span> <span class="nav-text">例题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unique-path"><span class="nav-number">3.</span> <span class="nav-text">Unique path</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Coin-change"><span class="nav-number">4.</span> <span class="nav-text">Coin change</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#例题："><span class="nav-number">1.</span> <span class="nav-text">例题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unique-path"><span class="nav-number">2.</span> <span class="nav-text">Unique path</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Coin-change"><span class="nav-number">3.</span> <span class="nav-text">Coin change</span></a></li></ol></div>
             
 
           </div>

@@ -559,7 +559,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-14T00:50:59+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-14T00:55:02+08:00">
                 2019-02-14
               </time>
             
@@ -620,7 +620,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  392
+                  399
                 </span>
               
 
@@ -658,28 +658,15 @@
 
       
         
-          
-            <p>动态规划和递归效率的比较：</p>
-<p>如图所示，递归会重复计算，效率极差：</p>
-<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg" alt=""></p>
-<h3 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
-<h3 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h3><h3 id="Unique-path"><a href="#Unique-path" class="headerlink" title="Unique path"></a>Unique path</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g0585av1qsj213f07bjuz.jpg" alt=""></p>
-<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g057x4f423j211l0jqtcu.jpg" alt=""></p>
-<p><strong>1.初始化</strong>：</p>
-<ol>
-<li>初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组</li>
-<li>初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1</li>
-<li>初始化初始值：最一开始的地方有一种走法，dp[0] [0]定义为1</li>
-</ol>
-<p><strong>2.状态转移</strong>：当行走过程中有障碍物的情况下，定义边界情况为第一行或者第一列为1是不成立的，因为障碍物的行走方式永远是0，所以这题我们还可以采用一种更通用的方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0;i&lt;n;i++)&#123;</span><br><span class="line">    for(int j=0;j&lt;m;j++)&#123;</span><br><span class="line">        if(i&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i-1][j];</span><br><span class="line">        &#125;</span><br><span class="line">        if(j&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i][j-1];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>3.返回值问题</strong>：需要注意的是最后return的是dp[n-1] [m-1]，因为这个坐标型动态规划坐标就代表实际的位置，而数组是从0开始的，所以index为数组长度-1</p>
-<p><strong>4.空间复杂度优化</strong>：如果这一项只和前几项有关，则可以用滚动数组优化空间复杂度，滚动数组大小不仅限于2，如图：</p>
-<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g059v1i6ebj209k0anq44.jpg" alt=""></p>
-<h3 id="Coin-change"><a href="#Coin-change" class="headerlink" title="Coin change"></a>Coin change</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058up3cq6j20z80g9n1g.jpg" alt=""></p>
-<p><img src="https://ws1.sinaimg.cn/mw690/c364e082gy1g05913xqwtj20mi0ctjur.jpg" alt=""></p>
-
-          
+          <p>动态规划的四个组成部分：</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/动态规划小结.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2442,7 +2429,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
