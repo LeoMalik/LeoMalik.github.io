@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[动态规划小结]]></title>
+    <url>%2F%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%B0%8F%E7%BB%93.html</url>
+    <content type="text"><![CDATA[动态规划和递归效率的比较： 如图所示，递归会重复计算，效率极差： 求解方法： 例题：Unique path 1.初始化： 初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组 初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1 初始化初始值：最一开始的地方有一种走法，dp[0] [0]定义为1 2.状态转移：当行走过程中有障碍物的情况下，定义边界情况为第一行或者第一列为1是不成立的，因为障碍物的行走方式永远是0，所以这题我们还可以采用一种更通用的方法： 12345678910for(int i=0;i&lt;n;i++)&#123; for(int j=0;j&lt;m;j++)&#123; if(i&gt;0)&#123; dp[i][j]+=dp[i-1][j]; &#125; if(j&gt;0)&#123; dp[i][j]+=dp[i][j-1]; &#125; &#125;&#125; 3.返回值问题：需要注意的是最后return的是dp[n-1] [m-1]，因为这个坐标型动态规划坐标就代表实际的位置，而数组是从0开始的，所以index为数组长度-1 4.空间复杂度优化：如果这一项只和前几项有关，则可以用滚动数组优化空间复杂度，滚动数组大小不仅限于2，如图： Coin change]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>动态规划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git合并多个commit]]></title>
     <url>%2FGit%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AAcommit.html</url>
     <content type="text"><![CDATA[「Git」合并多个 Commit 在使用 Git 作为版本控制的时候，我们可能会由于各种各样的原因提交了许多临时的 commit，而这些 commit 拼接起来才是完整的任务。那么我们为了避免太多的 commit 而造成版本控制的混乱，通常我们推荐将这些 commit 合并成一个。 首先假设我们有3个 commit git-log-origin.png 我们需要将 2dfbc7e8 和 c4e858b5 合并成一个 commit，那么我们输入如下命令 git-rebase-i.png 其中，-i 的参数是不需要合并的 commit 的 hash 值，这里指的是第一条 commit， 接着我们就进入到 vi 的编辑模式 git-rebase-edit.png 可以看到其中分为两个部分，上方未注释的部分是填写要执行的指令，而下方注释的部分则是指令的提示说明。指令部分中由前方的命令名称、commit hash 和 commit message 组成。 当前我们只要知道 pick 和 squash 这两个命令即可。 pick 的意思是要会执行这个 commit squash 的意思是这个 commit 会被合并到前一个commit 我们将 c4e858b5 这个 commit 前方的命令改成 squash 或 s，然后输入:wq以保存并退出 git-rebase-squash.png 这是我们会看到 commit message 的编辑界面 git-rebase-commit-message.png 其中, 非注释部分就是两次的 commit message, 你要做的就是将这两个修改成新的 commit message。 git-rebase-commit-message-combination.png 输入wq保存并推出, 再次输入git log查看 commit 历史信息，你会发现这两个 commit 已经合并了。 git-rebase-log-new.png 注意事项：如果这个过程中有操作错误，可以使用 git rebase --abort来撤销修改，回到没有开始操作合并之前的状态。 转自简书：https://www.jianshu.com/p/964de879904a]]></content>

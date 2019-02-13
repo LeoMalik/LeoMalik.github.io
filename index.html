@@ -511,6 +511,225 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/动态规划小结.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LeoMalik">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1fzshc4efd3j20hs0hs3yr.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="星球飙车💫">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/动态规划小结.html" itemprop="url">动态规划小结</a></h2>
+        
+
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-13T23:03:06+08:00">
+                2019-02-13
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-14T00:50:59+08:00">
+                2019-02-14
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/动态规划小结.html" class="leancloud_visitors" data-flag-title="动态规划小结">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  392
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>动态规划和递归效率的比较：</p>
+<p>如图所示，递归会重复计算，效率极差：</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058snod1oj213u0j4ai1.jpg" alt=""></p>
+<h3 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
+<h3 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h3><h3 id="Unique-path"><a href="#Unique-path" class="headerlink" title="Unique path"></a>Unique path</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g0585av1qsj213f07bjuz.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g057x4f423j211l0jqtcu.jpg" alt=""></p>
+<p><strong>1.初始化</strong>：</p>
+<ol>
+<li>初始化数组大小：由于是从0开始，且包括最后一项n，所以要建立一个n+1大小的数组</li>
+<li>初始化每个元素：无法走到的地方最一开始都初始化为0。求最值型动态规划：DP[0]一般初始化为0，求有多少种方法型动态规划：DP[0]一般初始化为1</li>
+<li>初始化初始值：最一开始的地方有一种走法，dp[0] [0]定义为1</li>
+</ol>
+<p><strong>2.状态转移</strong>：当行走过程中有障碍物的情况下，定义边界情况为第一行或者第一列为1是不成立的，因为障碍物的行走方式永远是0，所以这题我们还可以采用一种更通用的方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0;i&lt;n;i++)&#123;</span><br><span class="line">    for(int j=0;j&lt;m;j++)&#123;</span><br><span class="line">        if(i&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i-1][j];</span><br><span class="line">        &#125;</span><br><span class="line">        if(j&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i][j-1];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>3.返回值问题</strong>：需要注意的是最后return的是dp[n-1] [m-1]，因为这个坐标型动态规划坐标就代表实际的位置，而数组是从0开始的，所以index为数组长度-1</p>
+<p><strong>4.空间复杂度优化</strong>：如果这一项只和前几项有关，则可以用滚动数组优化空间复杂度，滚动数组大小不仅限于2，如图：</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g059v1i6ebj209k0anq44.jpg" alt=""></p>
+<h3 id="Coin-change"><a href="#Coin-change" class="headerlink" title="Coin change"></a>Coin change</h3><p><img src="https://ws1.sinaimg.cn/mw690/c364e082ly1g058up3cq6j20z80g9n1g.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082gy1g05913xqwtj20mi0ctjur.jpg" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/Git合并多个commit.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -2149,192 +2368,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/hello-world.html">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LeoMalik">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/c364e082ly1fzshc4efd3j20hs0hs3yr.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="星球飙车💫">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/hello-world.html" itemprop="url">Hello World</a></h2>
-        
-
-        <div class="post-meta">
-          
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-02T10:47:34+08:00">
-                2019-02-02
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T22:11:58+08:00">
-                2019-02-08
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/hello-world.html" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  73
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noopener noreferrer" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noopener noreferrer" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noopener noreferrer" target="_blank">GitHub</a>.</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/hello-world.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    <div>
-      
-    </div>
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -2380,7 +2420,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2402,7 +2442,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2452,6 +2492,10 @@
         
         
           <li>
+            <a href="/动态规划小结.html" title="动态规划小结" target="_blank">动态规划小结</a>
+          </li>
+        
+          <li>
             <a href="/Git合并多个commit.html" title="Git合并多个commit" target="_blank">Git合并多个commit</a>
           </li>
         
@@ -2465,10 +2509,6 @@
         
           <li>
             <a href="/Coursera Algorithms week1 3Sum in quadratic time.html" title="Coursera Algorithms week1 3Sum in quadratic time" target="_blank">Coursera Algorithms week1 3Sum in quadratic time</a>
-          </li>
-        
-          <li>
-            <a href="/卡塔兰数.html" title="卡塔兰数" target="_blank">卡塔兰数</a>
           </li>
         
       </ul>
@@ -2515,7 +2555,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.3k</span>
+    <span title="Site words total count">22.7k</span>
   
 </div>
 
