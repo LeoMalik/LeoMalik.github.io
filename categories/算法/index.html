@@ -11,7 +11,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://leomalik.github.io"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
   
@@ -302,6 +315,32 @@
 
       <h3 class="post-title">
         
+            <a class="post-title-link" href="/二分查找.html" itemprop="url">
+              
+                <span itemprop="name">二分查找</span>
+              
+            </a>
+        
+      </h3>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-02-17T21:00:01+08:00" content="2019-02-17">
+          02-17
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h3 class="post-title">
+        
             <a class="post-title-link" href="/动态规划小结.html" itemprop="url">
               
                 <span itemprop="name">动态规划小结</span>
@@ -557,7 +596,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -568,7 +607,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -579,7 +618,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -629,23 +668,23 @@
         
         
           <li>
+            <a href="/hexo的next主题个性化配置教程.html" title="hexo的next主题个性化配置教程" target="_blank">hexo的next主题个性化配置教程</a>
+          </li>
+        
+          <li>
+            <a href="/面经.html" title="面经" target="_blank">面经</a>
+          </li>
+        
+          <li>
+            <a href="/二分查找.html" title="二分查找" target="_blank">二分查找</a>
+          </li>
+        
+          <li>
             <a href="/动态规划小结.html" title="动态规划小结" target="_blank">动态规划小结</a>
           </li>
         
           <li>
             <a href="/Git合并多个commit.html" title="Git合并多个commit" target="_blank">Git合并多个commit</a>
-          </li>
-        
-          <li>
-            <a href="/Git如何回滚错误的提交.html" title="Git如何回滚错误的提交" target="_blank">Git如何回滚错误的提交</a>
-          </li>
-        
-          <li>
-            <a href="/01背包、完全背包、多重背包.html" title="01背包、完全背包、多重背包" target="_blank">01背包、完全背包、多重背包</a>
-          </li>
-        
-          <li>
-            <a href="/Coursera Algorithms week1 3Sum in quadratic time.html" title="Coursera Algorithms week1 3Sum in quadratic time" target="_blank">Coursera Algorithms week1 3Sum in quadratic time</a>
           </li>
         
       </ul>
@@ -692,7 +731,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.7k</span>
+    <span title="Site words total count">32.5k</span>
   
 </div>
 

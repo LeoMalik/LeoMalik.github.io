@@ -88,7 +88,7 @@
 
 
 
-  <meta name="keywords" content="tests,">
+  <meta name="keywords" content="算法,LintCode,">
 
 
 
@@ -99,18 +99,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta name="keywords" content="tests">
+<meta name="description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
+<meta name="keywords" content="算法,LintCode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://leomalik.github.io/hello-world.html">
+<meta property="og:title" content="二分查找">
+<meta property="og:url" content="http://leomalik.github.io/二分查找.html">
 <meta property="og:site_name" content="星球飙车💫">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-08T14:11:58.859Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082gy1g09rbg519ej20e80amwee.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/c364e082gy1g09rw2d79yj20f50aujrb.jpg">
+<meta property="og:updated_time" content="2019-02-17T14:37:53.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="二分查找">
+<meta name="twitter:description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/c364e082gy1g09rbg519ej20e80amwee.jpg">
 
 
 
@@ -140,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://leomalik.github.io/hello-world.html">
+  <link rel="canonical" href="http://leomalik.github.io/二分查找.html">
 
 
 
 
 
-  <title>Hello World | 星球飙车💫</title>
+  <title>二分查找 | 星球飙车💫</title>
   
 
 
@@ -315,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/hello-world.html">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/二分查找.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LeoMalik">
@@ -332,7 +335,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hello World</h2>
+          <h2 class="post-title" itemprop="name headline">二分查找</h2>
         
 
         <div class="post-meta">
@@ -345,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-02T10:47:34+08:00">
-                2019-02-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-17T21:00:01+08:00">
+                2019-02-17
               </time>
             
 
@@ -361,13 +364,35 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-08T22:11:58+08:00">
-                2019-02-08
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-17T22:37:53+08:00">
+                2019-02-17
               </time>
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -375,7 +400,7 @@
 
           
           
-             <span id="/hello-world.html" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/二分查找.html" class="leancloud_visitors" data-flag-title="二分查找">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -400,7 +425,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  73
+                  1.9k
                 </span>
               
 
@@ -416,7 +441,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  8
                 </span>
               
             </div>
@@ -437,16 +462,76 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noopener noreferrer" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noopener noreferrer" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noopener noreferrer" target="_blank">GitHub</a>.</p>
+        <p>二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。</p>
+<h3 id="小技巧："><a href="#小技巧：" class="headerlink" title="小技巧："></a>小技巧：</h3><ul>
+<li>优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环</li>
+<li>遍历两个数组：使用双指针，每次判断前进哪个指针</li>
+<li>搜索问题中，如果有相同的两个元素，则必须要用O(n)的时间复杂度（例：全是2的数组）</li>
+</ul>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" rel="external nofollow noopener noreferrer" target="_blank">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" rel="external nofollow noopener noreferrer" target="_blank">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" rel="external nofollow noopener noreferrer" target="_blank">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" rel="external nofollow noopener noreferrer" target="_blank">Deployment</a></p>
+<h3 id="三步翻转法："><a href="#三步翻转法：" class="headerlink" title="三步翻转法："></a>三步翻转法：</h3><p><strong>题目描述:</strong><br>给定一个字符串，要求把字符串前面的若干个字符移动到字符串的尾部，如把字符串“abcdef”前面的2个字符’a’和’b’移动到字符串的尾部，使得原字符串变成字符串“cdefab”。请写一个函数完成此功能，要求对长度为n的字符串操作的时间复杂度为 O(n)，空间复杂度为 O(1)。</p>
+<p><strong>三步反转法</strong><br>对于这个问题，换一个角度思考一下。</p>
+<p>将一个字符串分成X和Y两个部分，在每部分字符串上定义反转操作，如X^T，即把X的所有字符反转（如，X=”abc”，那么X^T=”cba”），那么就得到下面的结论：(X^TY^T)^T=YX，显然就解决了字符串的反转问题。</p>
+<p>例如，字符串 abcdef ，若要让def翻转到abc的前头，只要按照下述3个步骤操作即可：</p>
+<p>首先将原字符串分为两个部分，即X:abc，Y:def；<br>将X反转，X-&gt;X^T，即得：abc-&gt;cba；将Y反转，Y-&gt;Y^T，即得：def-&gt;fed。<br>反转上述步骤得到的结果字符串X^TY^T，即反转字符串cbafed的两部分（cba和fed）给予反转，cbafed得到defabc，形式化表示为(X^TY^T)^T=YX，这就实现了整个反转。</p>
+<p><strong>代码</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ReverseString</span><span class="params">(<span class="keyword">char</span>* s,<span class="keyword">int</span> from,<span class="keyword">int</span> to)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (from &lt; to)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> t = s[from];</span><br><span class="line">        s[from++] = s[to];</span><br><span class="line">        s[to--] = t;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LeftRotateString</span><span class="params">(<span class="keyword">char</span>* s,<span class="keyword">int</span> n,<span class="keyword">int</span> m)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m %= n;               <span class="comment">//若要左移动大于n位，那么和%n 是等价的</span></span><br><span class="line">    ReverseString(s, <span class="number">0</span>, m - <span class="number">1</span>); <span class="comment">//反转[0..m - 1]，套用到上面举的例子中，就是X-&gt;X^T，即 abc-&gt;cba</span></span><br><span class="line">    ReverseString(s, m, n - <span class="number">1</span>); <span class="comment">//反转[m..n - 1]，例如Y-&gt;Y^T，即 def-&gt;fed</span></span><br><span class="line">    ReverseString(s, <span class="number">0</span>, n - <span class="number">1</span>); <span class="comment">//反转[0..n - 1]，即如整个反转，(X^TY^T)^T=YX，即 cbafed-&gt;defabc。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="基本二分查找："><a href="#基本二分查找：" class="headerlink" title="基本二分查找："></a>基本二分查找：</h3><p>二分查找原始版–查找某个数的下标：</p>
+<p>对于一个sorted array分以下几步：</p>
+<ul>
+<li>输入数组为空或者NULL</li>
+<li>while(s+1&lt;e)，s为开始下标，e为结束下标减一 (nums.size()-1)</li>
+<li>先考虑边界情况，再缩小搜索区间</li>
+<li>这样可以把最后得到的元素缩减至两个，最后做判断<ul>
+<li>如果是判断最后一个O元素，则先判断nums[e]是不是等于target，</li>
+<li>如果是判断第一个X元素，则先判断nums[s]是不是等于target</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param nums: The integer array.</span></span><br><span class="line"><span class="comment">     * @param target: Target to find.</span></span><br><span class="line"><span class="comment">     * @return: The first position of target. Position starts from 0.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">binarySearch</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> e=nums.size()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums.size() == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(s+<span class="number">1</span>&lt;e)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = s+(e-s)/<span class="number">2</span>; <span class="comment">//防止越界</span></span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                e = mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &gt; target)&#123;</span><br><span class="line">                e = mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                s = mid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nums[s] == target)&#123;</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nums[e] == target)&#123;</span><br><span class="line">            <span class="keyword">return</span> e;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="拓展题型："><a href="#拓展题型：" class="headerlink" title="拓展题型："></a>拓展题型：</h3><p>0.未定长度型，搜索特定值</p>
+<p><strong>描述：</strong>给定一个排序数组，未给定最大长度，搜索其中的一个值</p>
+<p><strong>分析：</strong>通过倍增法，不断的扩大区间，求出搜索范围，再进行二分</p>
+<p>1.OOOXXX型，寻找分界点</p>
+<p><a href="https://www.lintcode.com/problem/first-bad-version/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/first-bad-version/description</a></p>
+<p><strong>描述：</strong>代码库的版本号是从 1 到 <em>n</em> 的整数。某一天，有人提交了错误版本的代码，因此造成自身及之后版本的代码在单元测试中均出错。请找出第一个错误的版本号。</p>
+<p>你可以通过 <code>isBadVersion</code> 的接口来判断版本号 version 是否在单元测试中出错，具体接口详情和调用方法请见代码的注释部分。</p>
+<p><strong>分析：</strong>转换成求最后一个O或者是第一个X，使用二分法查找</p>
+<p>2.旋转数组型，寻找分界点</p>
+<p><a href="https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/</a></p>
+<p><strong>描述：</strong>假设一个排好序的数组在其某一未知点发生了旋转（比如<strong>0 1 2 4 5 6 7</strong>可能在第3和第4个元素间发生旋转变成<strong>4 5 6 7 0 1 2</strong>）。</p>
+<p>你需要找到其中最小的元素。</p>
+<p>你可以假设数组中不存在重复的元素。</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082gy1g09rbg519ej20e80amwee.jpg" alt=""></p>
+<p><strong>分析：</strong>一开始想转换成求大于A的第一个点或者是小于B的最后一个点，使用二分法查找，后来发现，当数组处于特殊情况时，例如数组是从A到B递增时，不存在小于A的点，所以选择找&lt;=B的最后一个点。</p>
+<p>3.搜索二维矩阵中的最小值</p>
+<p><a href="https://www.lintcode.com/problem/search-a-2d-matrix/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/search-a-2d-matrix/description</a></p>
+<p><strong>描述：</strong>写出一个高效的算法来搜索 <em>m</em> × <em>n</em>矩阵中的值。</p>
+<p>这个矩阵具有以下特性：</p>
+<ul>
+<li>每行中的整数从左到右是排序的。</li>
+<li>每行的第一个数大于上一行的最后一个整数。</li>
+</ul>
+<p><strong>分析：</strong>搜索二维数组的时候，可以计算出这个二维数组的总长度，然后用</p>
+<p>[n/column] [n%column]来表示行数和列数，间接的减小时间复杂度。</p>
+<p>4.搜索波峰</p>
+<p><a href="https://www.lintcode.com/problem/find-peak-element/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/find-peak-element/description</a></p>
+<p><strong>描述</strong>：你给出一个整数数组(size为n)，其具有以下特点：</p>
+<ul>
+<li>相邻位置的数字是不同的</li>
+<li>A[0] &lt; A[1] 并且 A[n - 2] &gt; A[n - 1]</li>
+</ul>
+<p>假定<em>P</em>是峰值的位置则满足<code>A[P] &gt; A[P-1]</code>且<code>A[P] &gt; A[P+1]</code>，返回数组中任意一个峰值的位置。</p>
+<p><strong>分析：</strong>搜索波峰时，比较a[n]和a[n+1]之间的大小关系，判断是在走上坡还是下坡还是在波峰，从而判断波峰是在左边还是右边，从而缩小范围</p>
+<p>5.旋转数组型，寻找特定值</p>
+<p><strong>描述：</strong>假设有一个排序的按未知的旋转轴旋转的数组(比如，<strong>0 1 2 4 5 6 7</strong> 可能成为<strong>4 5 6 7 0 1 2</strong>)。给定一个目标值进行搜索，如果在数组中找到目标值返回数组中的索引位置，否则返回-1。</p>
+<p>你可以假设数组中不存在重复的元素。</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/c364e082gy1g09rw2d79yj20f50aujrb.jpg" alt=""></p>
+<p><strong>分析：</strong>先切一刀，找到mid，判断target是否在 s~m 区间内，</p>
+<p>如果在，则设置e=mid，在此区间内使用二分法查找，</p>
+<p>如果不在，由于剩下的还是一个Rotated array，我们可以定义s=mid，进行查找</p>
+<p>代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param A: an integer rotated sorted array</span></span><br><span class="line"><span class="comment">     * @param target: an integer to be searched</span></span><br><span class="line"><span class="comment">     * @return: an integer</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;A, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">         <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> e=A.size()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> mid;</span><br><span class="line">        <span class="keyword">if</span>(e==<span class="number">-1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;           </span><br><span class="line">        <span class="keyword">while</span>(s+<span class="number">1</span>&lt;e)&#123;</span><br><span class="line">            mid = s+(e-s)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(A[mid]==target)&#123;</span><br><span class="line">                <span class="keyword">return</span> mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(A[s]&lt;A[mid])&#123;</span><br><span class="line">                <span class="keyword">if</span>(target&gt;=A[s]&amp;&amp;target&lt;=A[mid])&#123;</span><br><span class="line">                    e=mid;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    s=mid;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(target&gt;=A[mid]&amp;&amp;target&lt;=A[e])&#123;</span><br><span class="line">                    s=mid;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    e=mid;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(A[s]==target)</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        <span class="keyword">if</span>(A[e]==target)</span><br><span class="line">            <span class="keyword">return</span> e;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -504,7 +589,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://leomalik.github.io/hello-world.html" title="Hello World">http://leomalik.github.io/hello-world.html</a>
+    <a href="http://leomalik.github.io/二分查找.html" title="二分查找">http://leomalik.github.io/二分查找.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -521,7 +606,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/tests/" rel="tag"> <i class="fa fa-tag"></i>tests</a>
+            <a href="/tags/算法/" rel="tag"> <i class="fa fa-tag"></i>算法</a>
+          
+            <a href="/tags/LintCode/" rel="tag"> <i class="fa fa-tag"></i>LintCode</a>
           
         </div>
       
@@ -534,14 +621,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/动态规划小结.html" rel="next" title="动态规划小结">
+                <i class="fa fa-chevron-left"></i> 动态规划小结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/HDU 2000-2099入门笔记.html" rel="prev" title="HDU 2000-2099 入门笔记">
-                HDU 2000-2099 入门笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/面经.html" rel="prev" title="面经">
+                面经 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -730,7 +821,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小技巧："><span class="nav-number">1.</span> <span class="nav-text">小技巧：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三步翻转法："><span class="nav-number">2.</span> <span class="nav-text">三步翻转法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本二分查找："><span class="nav-number">3.</span> <span class="nav-text">基本二分查找：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓展题型："><span class="nav-number">4.</span> <span class="nav-text">拓展题型：</span></a></li></ol></div>
             
 
           </div>
