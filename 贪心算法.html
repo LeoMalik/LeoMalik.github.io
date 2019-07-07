@@ -562,7 +562,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>老板赏杯咖啡☕吧</div>
+  <div>赏杯咖啡</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>打赏</span>
   </button>
@@ -672,7 +672,7 @@
 
   
 
-
+  
 
         </div>
         
@@ -1051,6 +1051,22 @@
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '92a5e58542da02db3d2d',
+          clientSecret: '74f4339ef12febe436ab77be74293e16fc851488',
+          repo: 'leomalik.github.io',
+          owner: 'leomalik',
+          admin: ['leomalik'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
