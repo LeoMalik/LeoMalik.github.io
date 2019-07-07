@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="算法,动态规划,">
+  <meta name="keywords" content="算法,LintCode,">
 
 
 
@@ -102,26 +102,21 @@
 
 
 
-<meta name="description" content="动态规划的四个组成部分：">
-<meta name="keywords" content="算法,动态规划">
+<meta name="description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
+<meta name="keywords" content="算法,LintCode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="动态规划小结">
-<meta property="og:url" content="http://leomalik.github.io/动态规划小结_new.html">
+<meta property="og:title" content="二分查找">
+<meta property="og:url" content="http://leomalik.github.io/二分查找.html">
 <meta property="og:site_name" content="Space Cowboy Mr.L">
-<meta property="og:description" content="动态规划的四个组成部分：">
+<meta property="og:description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058snod1oj213u0j4ai1.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g0585av1qsj213f07bjuz.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g057x4f423j211l0jqtcu.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g059v1i6ebj209k0anq44.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058up3cq6j20z80g9n1g.jpg">
-<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g05913xqwtj20mi0ctjur.jpg">
-<meta property="og:updated_time" content="2019-07-07T11:24:03.088Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g09rbg519ej20e80amwee.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g09rw2d79yj20f50aujrb.jpg">
+<meta property="og:updated_time" content="2019-07-07T11:47:34.437Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="动态规划小结">
-<meta name="twitter:description" content="动态规划的四个组成部分：">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
+<meta name="twitter:title" content="二分查找">
+<meta name="twitter:description" content="二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。 小技巧： 优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环 遍历两个数组：使用双指针，每次判断前进哪个指针 搜索问题中，如果有相同的两个元素，则必">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g09rbg519ej20e80amwee.jpg">
 
 
 
@@ -151,12 +146,12 @@
 
 
 
-  <link rel="canonical" href="http://leomalik.github.io/动态规划小结_new.html">
+  <link rel="canonical" href="http://leomalik.github.io/二分查找.html">
 
 
 
 
-  <title>动态规划小结 | Space Cowboy Mr.L</title>
+  <title>二分查找 | Space Cowboy Mr.L</title>
   
 
 
@@ -325,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/动态规划小结_new.html">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/二分查找.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LeoMalik">
@@ -342,7 +337,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">动态规划小结</h2>
+          <h2 class="post-title" itemprop="name headline">二分查找</h2>
         
 
         <div class="post-meta">
@@ -355,8 +350,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-13T23:03:06+08:00">
-                2019-02-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-17T21:00:01+08:00">
+                2019-02-17
               </time>
             
 
@@ -371,7 +366,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-07T19:24:03+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-07T19:47:34+08:00">
                 2019-07-07
               </time>
             
@@ -407,7 +402,7 @@
 
           
           
-             <span id="/动态规划小结_new.html" class="leancloud_visitors" data-flag-title="动态规划小结">
+             <span id="/二分查找.html" class="leancloud_visitors" data-flag-title="二分查找">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -432,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  857
+                  1.9k
                 </span>
               
 
@@ -448,7 +443,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  8
                 </span>
               
             </div>
@@ -469,57 +464,76 @@
       
 
       
-        <p>动态规划的四个组成部分：</p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
+        <p>二分查找多次刷题时遇到，虽然每次也能写对，但花了蛮多时间，没好好想过。而且网上的太多版本，并不是很简洁，而且边界条件变化情况太多，容易混淆，下面是自己对二分查找的一些思考和总结，尽量写得简单易懂。</p>
+<h3 id="小技巧："><a href="#小技巧：" class="headerlink" title="小技巧："></a>小技巧：</h3><ul>
+<li>优化二维数组查找时间复杂度：使用[n/column] [n%column]来表示行数和列数，避免双重循环</li>
+<li>遍历两个数组：使用双指针，每次判断前进哪个指针</li>
+<li>搜索问题中，如果有相同的两个元素，则必须要用O(n)的时间复杂度（例：全是2的数组）</li>
+</ul>
 <a id="more"></a>
-<p>动态规划和递归效率的比较：</p>
-<p>如图所示，递归会重复计算，效率极差：</p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058snod1oj213u0j4ai1.jpg" alt=""></p>
-<h3 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h3><h3 id="Unique-path"><a href="#Unique-path" class="headerlink" title="Unique path"></a>Unique path</h3><p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g0585av1qsj213f07bjuz.jpg" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g057x4f423j211l0jqtcu.jpg" alt=""></p>
-<p><strong>1.初始化</strong>：</p>
-<ol>
-<li><p>初始化数组大小：</p>
+<h3 id="三步翻转法："><a href="#三步翻转法：" class="headerlink" title="三步翻转法："></a>三步翻转法：</h3><p><strong>题目描述:</strong><br>给定一个字符串，要求把字符串前面的若干个字符移动到字符串的尾部，如把字符串“abcdef”前面的2个字符’a’和’b’移动到字符串的尾部，使得原字符串变成字符串“cdefab”。请写一个函数完成此功能，要求对长度为n的字符串操作的时间复杂度为 O(n)，空间复杂度为 O(1)。</p>
+<p><strong>三步反转法</strong><br>对于这个问题，换一个角度思考一下。</p>
+<p>将一个字符串分成X和Y两个部分，在每部分字符串上定义反转操作，如X^T，即把X的所有字符反转（如，X=”abc”，那么X^T=”cba”），那么就得到下面的结论：(X^TY^T)^T=YX，显然就解决了字符串的反转问题。</p>
+<p>例如，字符串 abcdef ，若要让def翻转到abc的前头，只要按照下述3个步骤操作即可：</p>
+<p>首先将原字符串分为两个部分，即X:abc，Y:def；<br>将X反转，X-&gt;X^T，即得：abc-&gt;cba；将Y反转，Y-&gt;Y^T，即得：def-&gt;fed。<br>反转上述步骤得到的结果字符串X^TY^T，即反转字符串cbafed的两部分（cba和fed）给予反转，cbafed得到defabc，形式化表示为(X^TY^T)^T=YX，这就实现了整个反转。</p>
+<p><strong>代码</strong>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ReverseString</span><span class="params">(<span class="keyword">char</span>* s,<span class="keyword">int</span> from,<span class="keyword">int</span> to)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (from &lt; to)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> t = s[from];</span><br><span class="line">        s[from++] = s[to];</span><br><span class="line">        s[to--] = t;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LeftRotateString</span><span class="params">(<span class="keyword">char</span>* s,<span class="keyword">int</span> n,<span class="keyword">int</span> m)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    m %= n;               <span class="comment">//若要左移动大于n位，那么和%n 是等价的</span></span><br><span class="line">    ReverseString(s, <span class="number">0</span>, m - <span class="number">1</span>); <span class="comment">//反转[0..m - 1]，套用到上面举的例子中，就是X-&gt;X^T，即 abc-&gt;cba</span></span><br><span class="line">    ReverseString(s, m, n - <span class="number">1</span>); <span class="comment">//反转[m..n - 1]，例如Y-&gt;Y^T，即 def-&gt;fed</span></span><br><span class="line">    ReverseString(s, <span class="number">0</span>, n - <span class="number">1</span>); <span class="comment">//反转[0..n - 1]，即如整个反转，(X^TY^T)^T=YX，即 cbafed-&gt;defabc。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="基本二分查找："><a href="#基本二分查找：" class="headerlink" title="基本二分查找："></a>基本二分查找：</h3><p>二分查找原始版–查找某个数的下标：</p>
+<p>对于一个sorted array分以下几步：</p>
 <ul>
-<li><strong>从0开始</strong>，一般为坐标型，建立一个n大小的数组，从0开始遍历。</li>
-<li><strong>从1开始</strong>，一般为坐标型，建立一个n+1大小的数组，从1开始遍历</li>
+<li>输入数组为空或者NULL</li>
+<li>while(s+1&lt;e)，s为开始下标，e为结束下标减一 (nums.size()-1)</li>
+<li>先考虑边界情况，再缩小搜索区间</li>
+<li>这样可以把最后得到的元素缩减至两个，最后做判断<ul>
+<li>如果是判断最后一个O元素，则先判断nums[e]是不是等于target，</li>
+<li>如果是判断第一个X元素，则先判断nums[s]是不是等于target</li>
 </ul>
 </li>
-<li><p>初始化起始位置：</p>
-<ul>
-<li><p>如果是<strong>序列型</strong>，n代表前n项，循环则从1开始</p>
-</li>
-<li><p>如果是<strong>坐标型</strong>，n代表对应位置的坐标，循环由0开始。</p>
-</li>
 </ul>
-</li>
-<li><p>初始化每个元素：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param nums: The integer array.</span></span><br><span class="line"><span class="comment">     * @param target: Target to find.</span></span><br><span class="line"><span class="comment">     * @return: The first position of target. Position starts from 0.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">binarySearch</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> e=nums.size()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums.size() == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(s+<span class="number">1</span>&lt;e)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = s+(e-s)/<span class="number">2</span>; <span class="comment">//防止越界</span></span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                e = mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &gt; target)&#123;</span><br><span class="line">                e = mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                s = mid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nums[s] == target)&#123;</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(nums[e] == target)&#123;</span><br><span class="line">            <span class="keyword">return</span> e;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="拓展题型："><a href="#拓展题型：" class="headerlink" title="拓展题型："></a>拓展题型：</h3><p>0.未定长度型，搜索特定值</p>
+<p><strong>描述：</strong>给定一个排序数组，未给定最大长度，搜索其中的一个值</p>
+<p><strong>分析：</strong>通过倍增法，不断的扩大区间，求出搜索范围，再进行二分</p>
+<p>1.OOOXXX型，寻找分界点</p>
+<p><a href="https://www.lintcode.com/problem/first-bad-version/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/first-bad-version/description</a></p>
+<p><strong>描述：</strong>代码库的版本号是从 1 到 <em>n</em> 的整数。某一天，有人提交了错误版本的代码，因此造成自身及之后版本的代码在单元测试中均出错。请找出第一个错误的版本号。</p>
+<p>你可以通过 <code>isBadVersion</code> 的接口来判断版本号 version 是否在单元测试中出错，具体接口详情和调用方法请见代码的注释部分。</p>
+<p><strong>分析：</strong>转换成求最后一个O或者是第一个X，使用二分法查找</p>
+<p>2.旋转数组型，寻找分界点</p>
+<p><a href="https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/</a></p>
+<p><strong>描述：</strong>假设一个排好序的数组在其某一未知点发生了旋转（比如<strong>0 1 2 4 5 6 7</strong>可能在第3和第4个元素间发生旋转变成<strong>4 5 6 7 0 1 2</strong>）。</p>
+<p>你需要找到其中最小的元素。</p>
+<p>你可以假设数组中不存在重复的元素。</p>
+<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g09rbg519ej20e80amwee.jpg" alt=""></p>
+<p><strong>分析：</strong>一开始想转换成求大于A的第一个点或者是小于B的最后一个点，使用二分法查找，后来发现，当数组处于特殊情况时，例如数组是从A到B递增时，不存在小于A的点，所以选择找&lt;=B的最后一个点。</p>
+<p>3.搜索二维矩阵中的最小值</p>
+<p><a href="https://www.lintcode.com/problem/search-a-2d-matrix/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/search-a-2d-matrix/description</a></p>
+<p><strong>描述：</strong>写出一个高效的算法来搜索 <em>m</em> × <em>n</em>矩阵中的值。</p>
+<p>这个矩阵具有以下特性：</p>
 <ul>
-<li><p>无法走到的地方最一开始都初始化为0。</p>
-</li>
-<li><p><strong>求最值型动态规划</strong>：DP[0]一般初始化为0，</p>
-</li>
-<li><p><strong>其他位置：求最小值时初始化为MAX，求最大值初始化为MIN等</strong>…</p>
-</li>
-<li><p><strong>求有多少种方法型动态规划</strong>：DP[0]一般初始化为1</p>
-</li>
+<li>每行中的整数从左到右是排序的。</li>
+<li>每行的第一个数大于上一行的最后一个整数。</li>
 </ul>
-</li>
-<li><p>初始化初始值：最一开始的地方有一种走法，dp[0] [0]定义为1</p>
-</li>
-</ol>
-<p><strong>2.状态转移</strong>：当行走过程中有障碍物的情况下，定义边界情况为第一行或者第一列为1是不成立的，因为障碍物的行走方式永远是0，所以这题我们还可以采用一种更通用的方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0;i&lt;n;i++)&#123;</span><br><span class="line">    for(int j=0;j&lt;m;j++)&#123;</span><br><span class="line">        if(i&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i-1][j];</span><br><span class="line">        &#125;</span><br><span class="line">        if(j&gt;0)&#123;</span><br><span class="line">            dp[i][j]+=dp[i][j-1];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>3.边界情况考虑：</strong>考虑到不可到达的时候初始化为多少，什么情况下发生状态转移（例如有三种钱币，f[j]=min{f[i-a[1]],f[i-a[2]]} 求最小值）</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(j!=k &amp;&amp; dp[i<span class="number">-1</span>][k]+costs[i<span class="number">-1</span>][j]&lt;dp[i][j])&#123;</span><br><span class="line">	dp[i][j]=dp[i<span class="number">-1</span>][k]+costs[i<span class="number">-1</span>][j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>4.返回值问题</strong>：需要注意的是最后return的是dp[n-1] [m-1]，因为这个坐标型动态规划坐标就代表实际的位置，而数组是从0开始的，所以index为数组长度-1</p>
-<p><strong>5.空间复杂度优化</strong>：如果这一项只和前几项有关，则可以用滚动数组优化空间复杂度，滚动数组大小不仅限于2，如图：</p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g059v1i6ebj209k0anq44.jpg" alt=""></p>
-<h3 id="Coin-change"><a href="#Coin-change" class="headerlink" title="Coin change"></a>Coin change</h3><p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058up3cq6j20z80g9n1g.jpg" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g05913xqwtj20mi0ctjur.jpg" alt=""></p>
-<h3 id="Paint-House"><a href="#Paint-House" class="headerlink" title="Paint-House"></a>Paint-House</h3><p>这里有<code>n</code>个房子在一列直线上，现在我们需要给房屋染色，分别有红色蓝色和绿色。每个房屋染不同的颜色费用也不同，你需要设计一种染色方案使得<strong>相邻的房屋颜色不同</strong>，并且费用最小，返回最小的费用。</p>
-<p>费用通过一个<code>n</code>x<code>3</code> 的矩阵给出，比如<code>cost[0][0]</code>表示房屋<code>0</code>染红色的费用，<code>cost[1][2]</code>表示房屋<code>1</code>染绿色的费用。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param costs: n x 3 cost matrix</span></span><br><span class="line"><span class="comment">     * @return: An integer, the minimum cost to paint all houses</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minCost</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; &amp;costs)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">int</span> n = costs.size();</span><br><span class="line">        <span class="keyword">int</span> dp[n+<span class="number">1</span>][<span class="number">3</span>];</span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">0</span>]=dp[<span class="number">0</span>][<span class="number">1</span>]=dp[<span class="number">0</span>][<span class="number">2</span>]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)&#123;</span><br><span class="line">                dp[i][j]=<span class="number">9999999</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;<span class="number">3</span>;k++)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(j!=k &amp;&amp; dp[i<span class="number">-1</span>][k]+costs[i<span class="number">-1</span>][j]&lt;dp[i][j])&#123;</span><br><span class="line">                        dp[i][j]=dp[i<span class="number">-1</span>][k]+costs[i<span class="number">-1</span>][j];</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> res=dp[n][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">if</span>(dp[n][<span class="number">1</span>]&lt;res)</span><br><span class="line">            res = dp[n][<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span>(dp[n][<span class="number">2</span>]&lt;res)</span><br><span class="line">            res = dp[n][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>分析：</strong>搜索二维数组的时候，可以计算出这个二维数组的总长度，然后用</p>
+<p>[n/column] [n%column]来表示行数和列数，间接的减小时间复杂度。</p>
+<p>4.搜索波峰</p>
+<p><a href="https://www.lintcode.com/problem/find-peak-element/description" rel="external nofollow noopener noreferrer" target="_blank">https://www.lintcode.com/problem/find-peak-element/description</a></p>
+<p><strong>描述</strong>：你给出一个整数数组(size为n)，其具有以下特点：</p>
+<ul>
+<li>相邻位置的数字是不同的</li>
+<li>A[0] &lt; A[1] 并且 A[n - 2] &gt; A[n - 1]</li>
+</ul>
+<p>假定<em>P</em>是峰值的位置则满足<code>A[P] &gt; A[P-1]</code>且<code>A[P] &gt; A[P+1]</code>，返回数组中任意一个峰值的位置。</p>
+<p><strong>分析：</strong>搜索波峰时，比较a[n]和a[n+1]之间的大小关系，判断是在走上坡还是下坡还是在波峰，从而判断波峰是在左边还是右边，从而缩小范围</p>
+<p>5.旋转数组型，寻找特定值</p>
+<p><strong>描述：</strong>假设有一个排序的按未知的旋转轴旋转的数组(比如，<strong>0 1 2 4 5 6 7</strong> 可能成为<strong>4 5 6 7 0 1 2</strong>)。给定一个目标值进行搜索，如果在数组中找到目标值返回数组中的索引位置，否则返回-1。</p>
+<p>你可以假设数组中不存在重复的元素。</p>
+<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g09rw2d79yj20f50aujrb.jpg" alt=""></p>
+<p><strong>分析：</strong>先切一刀，找到mid，判断target是否在 s~m 区间内，</p>
+<p>如果在，则设置e=mid，在此区间内使用二分法查找，</p>
+<p>如果不在，由于剩下的还是一个Rotated array，我们可以定义s=mid，进行查找</p>
+<p>代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * @param A: an integer rotated sorted array</span></span><br><span class="line"><span class="comment">     * @param target: an integer to be searched</span></span><br><span class="line"><span class="comment">     * @return: an integer</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;A, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">         <span class="comment">// write your code here</span></span><br><span class="line">        <span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> e=A.size()<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">int</span> mid;</span><br><span class="line">        <span class="keyword">if</span>(e==<span class="number">-1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;           </span><br><span class="line">        <span class="keyword">while</span>(s+<span class="number">1</span>&lt;e)&#123;</span><br><span class="line">            mid = s+(e-s)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(A[mid]==target)&#123;</span><br><span class="line">                <span class="keyword">return</span> mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(A[s]&lt;A[mid])&#123;</span><br><span class="line">                <span class="keyword">if</span>(target&gt;=A[s]&amp;&amp;target&lt;=A[mid])&#123;</span><br><span class="line">                    e=mid;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    s=mid;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(target&gt;=A[mid]&amp;&amp;target&lt;=A[e])&#123;</span><br><span class="line">                    s=mid;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    e=mid;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(A[s]==target)</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        <span class="keyword">if</span>(A[e]==target)</span><br><span class="line">            <span class="keyword">return</span> e;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -577,7 +591,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://leomalik.github.io/动态规划小结_new.html" title="动态规划小结">http://leomalik.github.io/动态规划小结_new.html</a>
+    <a href="http://leomalik.github.io/二分查找.html" title="二分查找">http://leomalik.github.io/二分查找.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -596,7 +610,7 @@
           
             <a href="/tags/算法/" rel="tag"> <i class="fa fa-tag"></i>算法</a>
           
-            <a href="/tags/动态规划/" rel="tag"> <i class="fa fa-tag"></i>动态规划</a>
+            <a href="/tags/LintCode/" rel="tag"> <i class="fa fa-tag"></i>LintCode</a>
           
         </div>
       
@@ -609,8 +623,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Git合并多个commit.html" rel="next" title="Git合并多个commit">
-                <i class="fa fa-chevron-left"></i> Git合并多个commit
+              <a href="/动态规划小结_new.html" rel="next" title="动态规划小结">
+                <i class="fa fa-chevron-left"></i> 动态规划小结
               </a>
             
           </div>
@@ -619,8 +633,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/二分查找.html" rel="prev" title="二分查找">
-                二分查找 <i class="fa fa-chevron-right"></i>
+              <a href="/hexo的next主题个性化配置教程.html" rel="prev" title="hexo的next主题个性化配置教程">
+                hexo的next主题个性化配置教程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -826,7 +840,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#例题："><span class="nav-number">1.</span> <span class="nav-text">例题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unique-path"><span class="nav-number">2.</span> <span class="nav-text">Unique path</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Coin-change"><span class="nav-number">3.</span> <span class="nav-text">Coin change</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paint-House"><span class="nav-number">4.</span> <span class="nav-text">Paint-House</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小技巧："><span class="nav-number">1.</span> <span class="nav-text">小技巧：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三步翻转法："><span class="nav-number">2.</span> <span class="nav-text">三步翻转法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本二分查找："><span class="nav-number">3.</span> <span class="nav-text">基本二分查找：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓展题型："><span class="nav-number">4.</span> <span class="nav-text">拓展题型：</span></a></li></ol></div>
             
 
           </div>
