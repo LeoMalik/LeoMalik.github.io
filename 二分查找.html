@@ -1058,7 +1058,7 @@
           repo: 'leomalik.github.io',
           owner: 'leomalik',
           admin: ['leomalik'],
-          id: location.pathname,
+          id: (location.pathname).split("/").pop().substring(0, 49),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
