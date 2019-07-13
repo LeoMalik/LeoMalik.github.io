@@ -102,18 +102,18 @@
 
 
 
-<meta name="description" content="前言二分查找作为程序员的一项基本技能，是面试官最常使用来考察程序员基本素质的算法之一，也是解决很多查找类题目的常用方法，它可以达到O(log n)的时间复杂度。 一般而言，当一个题目出现以下特性时，你就应该立即联想到它可能需要使用二分查找：  待查找的数组有序或者部分有序 要求时间复杂度低于O(n)，或者直接要求时间复杂度为O(log n)  二分查找有很多种变体，使用时需要注意查找条件，判断条件">
+<meta name="description" content="前言二分查找有很多种变体，使用时需要注意查找条件，判断条件和左右边界的更新方式，三者配合不好就很容易出现死循环或者遗漏区域，本篇中我们将介绍常见的几种查找方式的模板代码，包括：  标准的二分查找 二分查找左边界 二分查找右边界 二分查找左右边界 二分查找极值点">
 <meta name="keywords" content="算法,二分查找">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二分法之可能是总结的最好的一篇文章">
 <meta property="og:url" content="http://leomalik.github.io/二分法之可能是总结的最好的一篇文章.html">
 <meta property="og:site_name" content="Space Cowboy Mr.L">
-<meta property="og:description" content="前言二分查找作为程序员的一项基本技能，是面试官最常使用来考察程序员基本素质的算法之一，也是解决很多查找类题目的常用方法，它可以达到O(log n)的时间复杂度。 一般而言，当一个题目出现以下特性时，你就应该立即联想到它可能需要使用二分查找：  待查找的数组有序或者部分有序 要求时间复杂度低于O(n)，或者直接要求时间复杂度为O(log n)  二分查找有很多种变体，使用时需要注意查找条件，判断条件">
+<meta property="og:description" content="前言二分查找有很多种变体，使用时需要注意查找条件，判断条件和左右边界的更新方式，三者配合不好就很容易出现死循环或者遗漏区域，本篇中我们将介绍常见的几种查找方式的模板代码，包括：  标准的二分查找 二分查找左边界 二分查找右边界 二分查找左右边界 二分查找极值点">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-07T16:23:05.170Z">
+<meta property="og:updated_time" content="2019-07-13T15:25:20.951Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二分法之可能是总结的最好的一篇文章">
-<meta name="twitter:description" content="前言二分查找作为程序员的一项基本技能，是面试官最常使用来考察程序员基本素质的算法之一，也是解决很多查找类题目的常用方法，它可以达到O(log n)的时间复杂度。 一般而言，当一个题目出现以下特性时，你就应该立即联想到它可能需要使用二分查找：  待查找的数组有序或者部分有序 要求时间复杂度低于O(n)，或者直接要求时间复杂度为O(log n)  二分查找有很多种变体，使用时需要注意查找条件，判断条件">
+<meta name="twitter:description" content="前言二分查找有很多种变体，使用时需要注意查找条件，判断条件和左右边界的更新方式，三者配合不好就很容易出现死循环或者遗漏区域，本篇中我们将介绍常见的几种查找方式的模板代码，包括：  标准的二分查找 二分查找左边界 二分查找右边界 二分查找左右边界 二分查找极值点">
 
 
 
@@ -327,7 +327,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LeoMalik">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/20190707204957.png">
+      <meta itemprop="image" content="https://i.loli.net/2019/07/13/5d29fa6fbc8f281808.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -368,8 +368,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-07-08T00:23:05+08:00">
-                2019-07-08
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-13T23:25:20+08:00">
+                2019-07-13
               </time>
             
           </span>
@@ -466,13 +466,7 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>二分查找作为程序员的一项基本技能，是面试官最常使用来考察程序员基本素质的算法之一，也是解决很多查找类题目的常用方法，它可以达到O(log n)的时间复杂度。</p>
-<p>一般而言，当一个题目出现以下特性时，你就应该立即联想到它可能需要使用二分查找：</p>
-<ol>
-<li>待查找的数组有序或者部分有序</li>
-<li>要求时间复杂度低于O(n)，或者直接要求时间复杂度为O(log n)</li>
-</ol>
-<p>二分查找有很多种变体，使用时需要注意查找条件，判断条件和左右边界的更新方式，三者配合不好就很容易出现死循环或者遗漏区域，本篇中我们将介绍常见的几种查找方式的模板代码，包括：</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>二分查找有很多种变体，使用时需要注意查找条件，判断条件和左右边界的更新方式，三者配合不好就很容易出现死循环或者遗漏区域，本篇中我们将介绍常见的几种查找方式的模板代码，包括：</p>
 <ol>
 <li>标准的二分查找</li>
 <li>二分查找左边界</li>
@@ -482,6 +476,12 @@
 </li>
 </ol>
 <p>本文的内容来自于笔者个人的总结，事实上二分查找有很多种等价的写法，本文只是列出了笔者认为的最容易理解和记忆的方法。</p>
+<p>二分查找作为程序员的一项基本技能，是面试官最常使用来考察程序员基本素质的算法之一，也是解决很多查找类题目的常用方法，它可以达到O(log n)的时间复杂度。</p>
+<p>一般而言，当一个题目出现以下特性时，你就应该立即联想到它可能需要使用二分查找：</p>
+<ol>
+<li>待查找的数组有序或者部分有序</li>
+<li>要求时间复杂度低于O(n)，或者直接要求时间复杂度为O(log n)</li>
+</ol>
 <h1 id="二分查找、二分边界查找算法的模板代码总结"><a href="#二分查找、二分边界查找算法的模板代码总结" class="headerlink" title="二分查找、二分边界查找算法的模板代码总结"></a><a href="https://segmentfault.com/a/1190000016825704" rel="external nofollow noopener noreferrer" target="_blank">二分查找、二分边界查找算法的模板代码总结</a></h1><ul>
 <li><a href="https://segmentfault.com/t/算法/blogs" rel="external nofollow noopener noreferrer" target="_blank">算法</a></li>
 <li><a href="https://segmentfault.com/t/算法-数据结构/blogs" rel="external nofollow noopener noreferrer" target="_blank">算法-数据结构</a></li>
@@ -833,7 +833,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/20190707204957.png" alt="LeoMalik">
+              <img class="site-author-image" itemprop="image" src="https://i.loli.net/2019/07/13/5d29fa6fbc8f281808.png" alt="LeoMalik">
             
               <p class="site-author-name" itemprop="name">LeoMalik</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -846,7 +846,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -939,15 +939,15 @@
           </li>
         
           <li>
+            <a href="/剑指offer难题总结_new.html" title="剑指offer难题总结" target="_blank">剑指offer难题总结</a>
+          </li>
+        
+          <li>
             <a href="/剑指offer难题总结.html" title="剑指offer难题总结" target="_blank">剑指offer难题总结</a>
           </li>
         
           <li>
             <a href="/hexo的next主题个性化配置教程.html" title="hexo的next主题个性化配置教程" target="_blank">hexo的next主题个性化配置教程</a>
-          </li>
-        
-          <li>
-            <a href="/二分查找.html" title="二分查找" target="_blank">二分查找</a>
           </li>
         
       </ul>
@@ -1010,7 +1010,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">40.4k</span>
+    <span title="Site words total count">44.9k</span>
   
 </div>
 
