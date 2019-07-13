@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #2ab14a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3351,4 +3351,28 @@ pre .javascript .function {
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -transform: rotate(360deg);
+}
+.btn {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
+  background: #fff;
+  border: 2px solid #555;
+  text-decoration: none;
+  border-radius: 2px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  line-height: 2;
+  border-radius: 10px;
+}
+.site-title {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Yesteryear', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
