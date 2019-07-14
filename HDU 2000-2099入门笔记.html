@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://leomalik.github.io"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/💻?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/J_32px_1064973_easyicon.net.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/J_16px_1064973_easyicon.net.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/💻?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="算法,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wayne's Blog" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="都说HDU 2000-2099 是acm入门必刷题，为了备战蓝桥杯，巩固知识，我做了一些小笔记与总结。">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HDU 2000-2099 入门笔记">
+<meta property="og:url" content="http://leomalik.github.io/HDU 2000-2099入门笔记.html">
+<meta property="og:site_name" content="Wayne&#39;s Blog">
+<meta property="og:description" content="都说HDU 2000-2099 是acm入门必刷题，为了备战蓝桥杯，巩固知识，我做了一些小笔记与总结。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a_4%3Da_3%2B1%2Ba_3">
+<meta property="og:updated_time" content="2019-02-09T15:13:48.077Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HDU 2000-2099 入门笔记">
+<meta name="twitter:description" content="都说HDU 2000-2099 是acm入门必刷题，为了备战蓝桥杯，巩固知识，我做了一些小笔记与总结。">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=a_4%3Da_3%2B1%2Ba_3">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://leomalik.github.io/HDU 2000-2099入门笔记.html">
+
+
+
+
+  <title>HDU 2000-2099 入门笔记 | Wayne's Blog</title>
+  <!--  -->
+  <!-- <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> -->
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet" type="text/css">
+
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    
+    <a href="https://github.com/LeoMalik" class="github-corner" aria-label="View source on GitHub" rel="external nofollow noopener noreferrer" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wayne's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">“写博客是为了和过去以及未来的自己对话”</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/HDU 2000-2099入门笔记.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wayne">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://i.loli.net/2019/07/13/5d29fa6fbc8f281808.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wayne's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">HDU 2000-2099 入门笔记</h2>
+        
+
+        <div class="post-meta">
+          
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-02T11:46:03+08:00">
+                2019-02-02
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-02-09T23:13:48+08:00">
+                2019-02-09
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/HDU 2000-2099入门笔记.html" class="leancloud_visitors" data-flag-title="HDU 2000-2099 入门笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  6.3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  28
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>都说HDU 2000-2099 是acm入门必刷题，为了备战蓝桥杯，巩固知识，我做了一些小笔记与总结。<br><!-- ![](https://i1.hoopchina.com.cn/hupuapp/bbs/180153855732716/thread_180153855732716_20181109165433_s_24245_w_456_h_256_98723.jpg?x-oss-process=image/resize,w_800/format,webp) --><br><a id="more"></a></p>
+<h3 id="HDU-1002-A-B-Problem-two-大数问题"><a href="#HDU-1002-A-B-Problem-two-大数问题" class="headerlink" title="HDU 1002 A+B Problem two(大数问题)"></a>HDU 1002 A+B Problem two(大数问题)</h3><p>大数问题，通用的方法是使用string进行ascii码的加减</p>
+<ul>
+<li>两个数字的ascii码相加减去 <code>0</code> 就是对应数字的ascii码</li>
+<li>如果相加的数大于10,相加的ascii码减去<code>10</code>就是个位数</li>
+</ul>
+<p>代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">sum</span><span class="params">(<span class="built_in">string</span> &amp;s1, <span class="built_in">string</span> &amp;s2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (s1 == <span class="string">""</span> &amp;&amp; s2 == <span class="string">""</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"0"</span>;</span><br><span class="line">    <span class="keyword">if</span> (s1 == <span class="string">""</span>)</span><br><span class="line">        <span class="keyword">return</span> s2;</span><br><span class="line">    <span class="keyword">if</span> (s2 == <span class="string">""</span>)</span><br><span class="line">        <span class="keyword">return</span> s1;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">string</span> max, min;</span><br><span class="line">    <span class="keyword">int</span> lens1 = s1.length();</span><br><span class="line">    <span class="keyword">int</span> lens2 = s2.length();</span><br><span class="line">    <span class="keyword">if</span> (lens1 &lt; lens2)</span><br><span class="line">    &#123;</span><br><span class="line">        max = s2;</span><br><span class="line">        min = s1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        max = s1;</span><br><span class="line">        min = s2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> maxlen = max.length();</span><br><span class="line">    <span class="keyword">int</span> minlen = min.length();</span><br><span class="line">    <span class="keyword">int</span> i, j;</span><br><span class="line">    <span class="keyword">for</span> (i = maxlen - <span class="number">1</span>, j = minlen - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--, i--)</span><br><span class="line">    &#123;</span><br><span class="line">        max[i] = max[i] + min[i] - <span class="string">'0'</span>; <span class="comment">//相加的ascii码-0就是对应数组的ascii码</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = maxlen - <span class="number">1</span>; i &gt; <span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (max[i] &gt; <span class="string">'9'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            max[i] = max[i] - <span class="number">10</span>; <span class="comment">//相加的ascii码-10就是个位数</span></span><br><span class="line">            max[i - <span class="number">1</span>] += <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (max[<span class="number">0</span>] &gt; <span class="string">'9'</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        max[<span class="number">0</span>] -= <span class="number">10</span>;</span><br><span class="line">        max = <span class="string">"1"</span> + max;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; num;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> count = num;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (num)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">string</span> s1, s2;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"Case "</span> &lt;&lt; i &lt;&lt; <span class="string">":"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; s1 &lt;&lt; <span class="string">" + "</span> &lt;&lt; s2 &lt;&lt; <span class="string">" = "</span> &lt;&lt; sum(s1, s2) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">if</span> (i &lt; count)</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        num--;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2018-母牛的故事-递推"><a href="#HDU-2018-母牛的故事-递推" class="headerlink" title="HDU 2018 母牛的故事(递推)"></a>HDU 2018 母牛的故事(递推)</h3><p>相似：<strong>HDU 2044~2050,HDU2041</strong></p>
+<p><strong>Description</strong><br>　　有一头母牛，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？<br><strong>Input</strong><br>　　输入数据由多个测试实例组成，每个测试实例占一行，包括一个整数n(0&lt; n&lt; 55)，n的含义如题目中描述。<br>　　n=0表示输入数据的结束，不做处理。<br><strong>Output</strong><br>　　对于每个测试实例，输出在第n年的时候母牛的数量。<br>　　每个输出占一行。</p>
+<p><strong>分析</strong>:<br>​    以n=6为例，fn=9头牛可以分解为6+3，其中6是上一年（第5年）的牛，3是新生的牛（因为第3年有3头牛，这3头在第6年各生一头牛）。<br>　　我们可以得出这样一个公式：fn=fn-1+fn-3<br>　　再理解一下，fn-1是前一年的牛，第n年仍然在，fn-3是前三年那一年的牛，但换句话说也就是第n年具有生育能力的牛，也就是第n年能生下的小牛数。</p>
+<p><strong>代码:</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> n)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n&amp;&amp;n!=<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;f(n)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;<span class="number">4</span>)</span><br><span class="line">        <span class="keyword">return</span> n; <span class="comment">//第1，2，3年，各为1，2，3头</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> f(n<span class="number">-1</span>)+f(n<span class="number">-3</span>);  <span class="comment">//第n年为前一年的和前3年的相加</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2031-进制转换-模拟"><a href="#HDU-2031-进制转换-模拟" class="headerlink" title="HDU 2031 进制转换(模拟):"></a>HDU 2031 进制转换(模拟):</h3><p><strong>Problem Description</strong></p>
+<p>输入一个十进制数N，将它转换成R进制数输出。</p>
+<p><strong>Input</strong></p>
+<p>输入数据包含多个测试实例，每个测试实例包含两个整数N(32位整数)和R（2&lt;=R&lt;=16, R&lt;&gt;10）。 </p>
+<p><strong>Output</strong></p>
+<p>为每个测试实例输出转换后的数，每个输出占一行。如果R大于10，则对应的数字规则参考16进制（比如，10用A表示，等等）。</p>
+<p><strong>分析:</strong></p>
+<p> 进制转换,也就是取余,以7的二进制表示:</p>
+<ol>
+<li>7%2=1…7/2=3</li>
+<li>3%2=1…3/2=1</li>
+<li>1%2=1…1/2=0</li>
+</ol>
+<p>取余的数字拼接为111,直到商为0为止,即是7的二进制表示</p>
+<p><strong>代码:</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,r,i,x,flag;</span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">1000</span>];</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;n,&amp;r)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (n&lt;<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            n=-n;</span><br><span class="line">            flag=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        x=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (n)</span><br><span class="line">        &#123;</span><br><span class="line">            a[x]=n%r;</span><br><span class="line">            n/=r;</span><br><span class="line">            x++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (x--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (flag)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"-"</span>);</span><br><span class="line">                flag=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (a[x]&lt;<span class="number">10</span>)</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d"</span>,a[x]);</span><br><span class="line">            <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"%c"</span>,<span class="number">55</span>+a[x]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2048-神、上帝以及老天爷-错排问题"><a href="#HDU-2048-神、上帝以及老天爷-错排问题" class="headerlink" title="HDU 2048 神、上帝以及老天爷(错排问题)"></a>HDU 2048 神、上帝以及老天爷(错排问题)</h3><p>相似：<strong>HDU 2049</strong></p>
+<p><strong>Description</strong></p>
+<p>HDU 2006’10 ACM contest的颁奖晚会隆重开始了！<br>为了活跃气氛，组织者举行了一个别开生面、奖品丰厚的抽奖活动，这个活动的具体要求是这样的：</p>
+<p>首先，所有参加晚会的人员都将一张写有自己名字的字条放入抽奖箱中；<br>然后，待所有字条加入完毕，每人从箱中取一个字条；<br>最后，如果取得的字条上写的就是自己的名字，那么“恭喜你，中奖了！”</p>
+<p>大家可以想象一下当时的气氛之热烈，毕竟中奖者的奖品是大家梦寐以求的Twins签名照呀！不过，正如所有试图设计的喜剧往往以悲剧结尾，这次抽奖活动最后竟然没有一个人中奖！</p>
+<p>我的神、上帝以及老天爷呀，怎么会这样呢？</p>
+<p>不过，先不要激动，现在问题来了，你能计算一下发生这种情况的概率吗？</p>
+<p>不会算？难道你也想以悲剧结尾？！</p>
+<p><strong>Input</strong></p>
+<p>输入数据的第一行是一个整数C,表示测试实例的个数，然后是C 行数据，每行包含一个整数n(1 &lt; n &lt; =20),表示参加抽奖的人数。</p>
+<p><strong>Output</strong></p>
+<p>对于每个测试实例，请输出发生这种情况的百分比，每个实例的输出占一行, 结果保留两位小数(四舍五入)，具体格式请参照sample output。</p>
+<p><strong>分析:</strong></p>
+<p>典型的错排问题,具体思路如下:</p>
+<p>当n个编号元素放在n个编号位置，元素编号与位置编号各不对应的方法数用D(n)表示，那么D(n-1)就表示n-1个编号元素放在n-1个编号位置，各不对应的方法数，其它类推. </p>
+<ol>
+<li>把第n个元素放在一个位置，比如位置k，一共有n-1种方法； </li>
+<li>放编号为k的元素，这时有两种情况：⑴把它放到位置n，那么，对于剩下的n-1个元素，由于第k个元素放到了位置n，剩下n-2个元素就有D(n-2)种方法；⑵第k个元素不把它放到位置n，这时，对于这n-1个元素，有D(n-1)种方法；<br> 综上得到 D(n) = (n-1) [D(n-2) + D(n-1)]<br> 特殊地，D(1) = 0, D(2) = 1.</li>
+</ol>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">int</span> i,j,num;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> D[<span class="number">22</span>],F[<span class="number">22</span>];</span><br><span class="line">    D[<span class="number">1</span>]=<span class="number">0</span>;D[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">3</span>;i&lt;<span class="number">21</span>;i++)</span><br><span class="line">        D[i]=(i<span class="number">-1</span>)*(D[i<span class="number">-1</span>]+D[i<span class="number">-2</span>]);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">20</span>;i&gt;<span class="number">0</span>;i--)&#123;</span><br><span class="line">        F[i]=i;</span><br><span class="line">        <span class="keyword">for</span>(j=i<span class="number">-1</span>;j&gt;<span class="number">1</span>;j--)</span><br><span class="line">            F[i]*=j;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num);</span><br><span class="line">    <span class="keyword">while</span>(num--)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf%%\n"</span>,D[n]*<span class="number">100.0</span>/F[n]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2053-Switch-Game-开灯问题-唯一分解定理"><a href="#HDU-2053-Switch-Game-开灯问题-唯一分解定理" class="headerlink" title="HDU 2053 Switch Game(开灯问题,唯一分解定理)"></a>HDU 2053 Switch Game(开灯问题,唯一分解定理)</h3><p><strong>Problem Description</strong></p>
+<p>There are many lamps in a line. All of them are off at first. A series of operations are carried out on these lamps. On the i-th operation, the lamps whose numbers are the multiple of i change the condition ( on to off and off to on ).</p>
+<p><strong>Input</strong></p>
+<p>Each test case contains only a number n ( 0&lt; n&lt;= 10^5) in a line.</p>
+<p><strong>Output</strong></p>
+<p>Output the condition of the n-th lamp after infinity operations ( 0 - off, 1 - on ).</p>
+<p><strong>分析：</strong></p>
+<p>36的约数是 (1,36), (2,18), (3,12), (4,9), (6)，任何一个数都是由两个不同的数相乘得到的，但是如果一个数为平方数，那么这两个数就可以相等，例如36由两个6相乘得到，所以要判断灯的状态，只需要判断这个数是不是平方数即可</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> x=<span class="built_in">sqrt</span>(n*<span class="number">1.0</span>);</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;(x==<span class="keyword">int</span>(x))&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2057-A-B-Again-16进制数相加"><a href="#HDU-2057-A-B-Again-16进制数相加" class="headerlink" title="HDU 2057 A + B Again (16进制数相加)"></a>HDU 2057 A + B Again (16进制数相加)</h3><p><strong>Problem Description</strong></p>
+<p>There must be many A + B problems in our HDOJ , now a new one is coming.<br>Give you two hexadecimal integers , your task is to calculate the sum of them,and print it in hexadecimal too.<br>Easy ? AC it !</p>
+<p><strong>Input</strong></p>
+<p>The input contains several test cases, please process to the end of the file.<br>Each case consists of two hexadecimal integers A and B in a line seperated by a blank.<br>The length of A and B is less than 15.</p>
+<p><strong>Output</strong></p>
+<p>For each test case,print the sum of A and B in hexadecimal in one line.</p>
+<p><strong>分析：</strong></p>
+<p>涉及到16进制内的加法，可以用%I64x直接来处理，要<strong>注意到16进制中负数是用补码来表示的</strong>。一个比较困惑的事实是，这道题再输出时，%64X中‘X’必须是大写，小写是过不了的。</p>
+<p><strong>注意</strong>：__int64 %I64X ,输出用大写</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"cstdio"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    __int64 a,b,c;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%I64X%I64X"</span>,&amp;a,&amp;b))</span><br><span class="line">    &#123;</span><br><span class="line">        c=a+b;</span><br><span class="line">        <span class="keyword">if</span>(c&gt;=<span class="number">0</span>)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%I64X\n"</span>,c);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"-%I64X\n"</span>,-c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2062-Subset-sequence（子序列）"><a href="#HDU-2062-Subset-sequence（子序列）" class="headerlink" title="HDU 2062 Subset sequence（子序列）"></a>HDU 2062 Subset sequence（子序列）</h3><p><strong>Problem Description</strong></p>
+<p>Consider the aggregate An= { 1, 2, …, n }. For example, A1={1}, A3={1,2,3}. A subset sequence is defined as a array of a non-empty subset. Sort all the subset sequece of An in lexicography order. Your task is to find the m-th one.</p>
+<p><strong>Input</strong></p>
+<p>The input contains several test cases. Each test case consists of two numbers n and m ( 0&lt; n&lt;= 20, 0&lt; m&lt;= the total number of the subset sequence of An ).</p>
+<p><strong>Output</strong></p>
+<p>For each test case, you should output the m-th subset sequence of An in one line.</p>
+<p><strong>分析：</strong></p>
+<p>当n=2的时候</p>
+<p>子序列从小到大</p>
+<p>{1},</p>
+<p>{1, 2},</p>
+<p>{2},</p>
+<p>{2, 1}</p>
+<p>当n=3的时候</p>
+<p>子序列从小到大</p>
+<p>{1}</p>
+<p>{1, 2}</p>
+<p>{1, 2, 3}</p>
+<p>{1, 3}</p>
+<p>{1, 3, 2}</p>
+<p>{2}<br>{2, 1}<br>{2, 1, 3}<br>{2, 3}<br>{2, 3, 1}</p>
+<p>{3}<br>{3, 1}<br>{3, 1, 2}<br>{3, 2}<br>{3, 2, 1}</p>
+<p>不难发现，An可以按首数字分成n组，而每组里除了第一项，剩下的就是An-1的子集合了。</p>
+<p>∴f(n) = n[f(n-1) + 1]</p>
+<p>f(1) = 1</p>
+<p>我们拿测试数据3 10来做个示范，解释一下怎么求解。</p>
+<p>因为n=3，所以开始数组里1、2、3三个数。</p>
+<p>我们知道，n=2时，有4种排列，所以上面n=3可以分成三组，每组5个(加上空集)。</p>
+<p>//空集就是说去掉该组第一个数字后为空集</p>
+<p>因此第10个在第二组里。所以第一个是2，把2输出。原来的数组里删除2，变成1、3两个数。然后10 - (2 - 1) * 5 =5，即它在第2组的第5个。</p>
+<p>//请自行推导所在位置</p>
+<p>减去首个空集合，5 - 1 = 4 ≠ 0，表示2后面还有数字。</p>
+<p>因为A1 = 1是，所以再第2组里又可以分成两组，每组2个(加上空集)。</p>
+<p>所以，4在第2组，剩下的数组中，第二个元素是3，所以输出3。再把数组里的3删除，剩下1一个数。</p>
+<p>然后4 - (2 - 1) * 2 = 2，既它是第2组的第2个。</p>
+<p>减去首个空集，2 - 1 = 1 ≠ 0，表示2后面还有数字。</p>
+<p>按上面的方法继续下去，直到n = 0 或 后面为空集为止。</p>
+<p>最后输出数组里的第1个元素，就得到2 3 1，就是解了。从上面的计算可以看出来，本题目的关键是先求的An中每一组的个数g(n)</p>
+<p>不难得出:g(n) = f(n) / n</p>
+<p>∵f(n) = n[f(n-1) + 1]</p>
+<p>∴g(n) = n[f(n-1) + 1] / n = f(n-1) + 1</p>
+<p>∵f(n-1) = (n-1) * g(n-1)</p>
+<p>∴g(n) = (n-1) * g(n-1) + 1</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    __int64 b;</span><br><span class="line">    __int64 g[<span class="number">30</span>];</span><br><span class="line">    g[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    g[<span class="number">2</span>]=<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>;i&lt;<span class="number">22</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        g[i]=g[i<span class="number">-1</span>]*(i<span class="number">-1</span>)+<span class="number">1</span>;<span class="comment">//求出g；</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> num[<span class="number">30</span>];</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d%I64d"</span>,&amp;a,&amp;b)!=EOF)  <span class="comment">//b的数可能很大，所以用I64d，，用int运行错了</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(num,<span class="number">0</span>,<span class="keyword">sizeof</span>(num));<span class="comment">//清零</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=a;i++)</span><br><span class="line">            num[i]=i;        <span class="comment">//将要输出的数字保存在数组里</span></span><br><span class="line">        <span class="keyword">int</span> am=a;</span><br><span class="line">        <span class="keyword">while</span>(a--)<span class="comment">//总共有a个数（1---a）最多可能输出a个</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> n=b%g[a+<span class="number">1</span>]? b/g[a+<span class="number">1</span>]+<span class="number">1</span>: b/g[a+<span class="number">1</span>];       <span class="comment">//我们用b取余对应的g，，得到要输出的数在第几组</span></span><br><span class="line">            <span class="keyword">if</span>(num[n]==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>(am<span class="number">-1</span>==a)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d"</span>,num[n]);       /  /输出对应的组代表的数字</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">" %d"</span>,num[n]);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=n;i&lt;=a;i++)</span><br><span class="line">                num[i]=num[i+<span class="number">1</span>];            <span class="comment">//将刚输出的数字删掉，，留下剩下的数字，，没用的数字都变成0了</span></span><br><span class="line">            b=(b-g[a+<span class="number">1</span>]*(n<span class="number">-1</span>)<span class="number">-1</span>);   <span class="comment">//把问题缩小到下一组，，， 求出在下一组的位置；循环；直到要输出的num为0，说明所有的数都输完了；</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2064-汉诺塔Ⅲ（递归）"><a href="#HDU-2064-汉诺塔Ⅲ（递归）" class="headerlink" title="HDU 2064 汉诺塔Ⅲ（递归）"></a>HDU 2064 汉诺塔Ⅲ（递归）</h3><p><strong>Problem Description</strong></p>
+<p>约19世纪末，在欧州的商店中出售一种智力玩具，在一块铜板上有三根杆，最左边的杆上自上而下、由小到大顺序串着由64个圆盘构成的塔。目的是将最左边杆上的盘全部移到右边的杆上，条件是一次只能移动一个盘，且不允许大盘放在小盘的上面。<br>现在我们改变游戏的玩法，不允许直接从最左(右)边移到最右(左)边(每次移动一定是移到中间杆或从中间移出)，也不允许大盘放到下盘的上面。<br>Daisy已经做过原来的汉诺塔问题和汉诺塔II，但碰到这个问题时，她想了很久都不能解决，现在请你帮助她。现在有N个圆盘，她至少多少次移动才能把这些圆盘从最左边移到最右边？</p>
+<p><strong>Input</strong></p>
+<p>包含多组数据，每次输入一个N值(1&lt;=N=35)。</p>
+<p><strong>Output</strong></p>
+<p>对于每组数据，输出移动最小的次数。</p>
+<p><strong>分析：</strong></p>
+<p>建议阅读 <a href="https://www.zhihu.com/question/24385418" rel="external nofollow noopener noreferrer" target="_blank">如何理解汉诺塔的递归？ - 知乎</a></p>
+<p>其实本题的复杂之处就是相当与比以往的汉诺塔多移动了一次柱子，原来<img src="https://www.zhihu.com/equation?tex=a_4%3Da_3%2B1%2Ba_3" alt="a_4=a_3+1+a_3">，现在a4=a3+a3+a3+2(移动最大的圆盘要两次)，理解了便能很快求解</p>
+<h3 id="…HDU-2059-Seraph2012-DP"><a href="#…HDU-2059-Seraph2012-DP" class="headerlink" title="…HDU 2059  Seraph2012 (DP)"></a>…HDU 2059  Seraph2012 (DP)</h3><h3 id="HDU-2037-今年暑假不AC（贪心）"><a href="#HDU-2037-今年暑假不AC（贪心）" class="headerlink" title="HDU 2037 今年暑假不AC（贪心）"></a>HDU 2037 今年暑假不AC（贪心）</h3><p>推荐：<a href="https://juejin.im/post/5aea722e6fb9a07ac652dbc8" rel="external nofollow noopener noreferrer" target="_blank">贪心算法</a></p>
+<p><strong>Problem Description</strong><br>“今年暑假不AC？”<br>“是的。”<br>“那你干什么呢？”<br>“看世界杯呀，笨蛋！”<br>“@#$%^&amp;*%…”</p>
+<p>确实如此，世界杯来了，球迷的节日也来了，估计很多ACMer也会抛开电脑，奔向电视了。<br>作为球迷，一定想看尽量多的完整的比赛，当然，作为新时代的好青年，你一定还会看一些其它的节目，比如新闻联播（永远不要忘记关心国家大事）、非常6+7、超级女生，以及王小丫的《开心辞典》等等，假设你已经知道了所有你喜欢看的电视节目的转播时间表，你会合理安排吗？（目标是能看尽量多的完整节目）<br><strong>Input</strong><br>输入数据包含多个测试实例，每个测试实例的第一行只有一个整数n(n&lt;=100)，表示你喜欢看的节目的总数，然后是n行数据，每行包括两个数据Ti_s,Ti_e (1&lt;=i&lt;=n)，分别表示第i个节目的开始和结束时间，为了简化问题，每个时间都用一个正整数表示。n=0表示输入结束，不做处理。<br><strong>Output</strong><br>对于每个测试实例，输出能完整看到的电视节目的个数，每个测试实例的输出占一行。</p>
+<p><strong>分析：</strong>最简单的贪心算法，因为一个节目对应一个开始时间和一个结束时间，所以，将这两个时间放到一个结构体中，然后对结束时间按照从小到大的顺序进行排序，如果结束的时间相同的话，就将开始的时间按照从大到小的顺序排序，然后开始比较，如果开始的时间比前一个结束的时间迟，就k++，最终k的值即为所求！</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Program</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> start,end;</span><br><span class="line">&#125;pro[<span class="number">10001</span>];</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,sum,final;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    Program temp;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n) &amp;&amp; n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;pro[i].start,&amp;pro[i].end);</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;++i)</span><br><span class="line">            <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;++j)</span><br><span class="line">                <span class="keyword">if</span>(pro[i].end&gt;pro[j].end)</span><br><span class="line">                &#123;</span><br><span class="line">                    temp=pro[i];</span><br><span class="line">                    pro[i]=pro[j];</span><br><span class="line">                    pro[j]=temp;</span><br><span class="line">                &#125;</span><br><span class="line">        sum=<span class="number">1</span>;</span><br><span class="line">        final=pro[<span class="number">0</span>].end;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(final&lt;=pro[i].start)</span><br><span class="line">            &#123;</span><br><span class="line">                ++sum;</span><br><span class="line">                final=pro[i].end;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2063-过山车-（二分图的最大匹配、完美匹配和匈牙利算法）"><a href="#HDU-2063-过山车-（二分图的最大匹配、完美匹配和匈牙利算法）" class="headerlink" title="HDU 2063 过山车 （二分图的最大匹配、完美匹配和匈牙利算法）"></a>HDU 2063 过山车 （二分图的最大匹配、完美匹配和匈牙利算法）</h3><p><strong>Problem Description</strong></p>
+<p>RPG girls今天和大家一起去游乐场玩，终于可以坐上梦寐以求的过山车了。可是，过山车的每一排只有两个座位，而且还有条不成文的规矩，就是每个女生必须找个个男生做partner和她同坐。但是，每个女孩都有各自的想法，举个例子把，Rabbit只愿意和XHD或PQK做partner，Grass只愿意和linle或LL做partner，PrincessSnow愿意和水域浪子或伪酷儿做partner。考虑到经费问题，boss刘决定只让找到partner的人去坐过山车，其他的人，嘿嘿，就站在下面看着吧。聪明的Acmer，你可以帮忙算算最多有多少对组合可以坐上过山车吗？</p>
+<p><strong>Input</strong></p>
+<p>输入数据的第一行是三个整数K , M , N，分别表示可能的组合数目，女生的人数，男生的人数。0&lt;K&lt;=1000<br>1&lt;=N 和M&lt;=500.接下来的K行，每行有两个数，分别表示女生Ai愿意和男生Bj做partner。最后一个0结束输入。</p>
+<p><strong>Output</strong></p>
+<p>对于每组数据，输出一个整数，表示可以坐上过山车的最多组合数。</p>
+<p><strong>分析：</strong></p>
+<p><a href="https://www.renfei.org/blog/bipartite-matching.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.renfei.org/blog/bipartite-matching.html</a></p>
+<p><a href="https://blog.csdn.net/dark_scope/article/details/8880547" rel="external nofollow noopener noreferrer" target="_blank">https://blog.csdn.net/dark_scope/article/details/8880547</a></p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">505</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">bool</span> a[maxn][maxn];</span><br><span class="line"><span class="keyword">bool</span> vis[maxn];</span><br><span class="line"><span class="keyword">int</span> ok[maxn];</span><br><span class="line"><span class="comment">//ok[x]=y;//第x个男生和第y个女生做partner</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Find</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)<span class="comment">//男生</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[x][i]&amp;&amp;!vis[i])</span><br><span class="line">        &#123;</span><br><span class="line">            vis[i]=<span class="literal">true</span>;</span><br><span class="line">            <span class="comment">//该男生没有被组合||该女生可以找其他人组合</span></span><br><span class="line">            <span class="keyword">if</span>(!ok[i]||Find(ok[i]))</span><br><span class="line">            &#123;</span><br><span class="line">                ok[i]=x;<span class="comment">//第i个男生和第x个女生做partner</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> k;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;k,k)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;</span><br><span class="line">        <span class="built_in">memset</span>(a,<span class="literal">false</span>,<span class="keyword">sizeof</span>(a));</span><br><span class="line">        <span class="built_in">memset</span>(ok,<span class="number">0</span>,<span class="keyword">sizeof</span>(ok));</span><br><span class="line">        <span class="keyword">int</span> x,y;</span><br><span class="line">        <span class="keyword">while</span>(k--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y;</span><br><span class="line">            a[x][y]=<span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=m; i++) <span class="comment">//女生</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">memset</span>(vis,<span class="literal">false</span>,<span class="keyword">sizeof</span>(vis));</span><br><span class="line">            <span class="keyword">if</span>(Find(i))</span><br><span class="line">                ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2066-一个人的旅行（最短路，多起点多终点，Dijkstra算法-spfa算法）"><a href="#HDU-2066-一个人的旅行（最短路，多起点多终点，Dijkstra算法-spfa算法）" class="headerlink" title="HDU 2066 一个人的旅行（最短路，多起点多终点，Dijkstra算法+spfa算法）"></a>HDU 2066 一个人的旅行（最短路，多起点多终点，Dijkstra算法+spfa算法）</h3><p><strong>Problem Description</strong><br>虽然草儿是个路痴（就是在杭电待了一年多，居然还会在校园里迷路的人，汗~),但是草儿仍然很喜欢旅行，因为在旅途中 会遇见很多人（白马王子，^0^），很多事，还能丰富自己的阅历，还可以看美丽的风景……草儿想去很多地方，她想要去东京铁塔看夜景，去威尼斯看电影，去阳明山上看海芋，去纽约纯粹看雪景，去巴黎喝咖啡写信，去北京探望孟姜女……眼看寒假就快到了，这么一大段时间，可不能浪费啊，一定要给自己好好的放个假，可是也不能荒废了训练啊，所以草儿决定在要在最短的时间去一个自己想去的地方！因为草儿的家在一个小镇上，没有火车经过，所以她只能去邻近的城市坐火车（好可怜啊~）。</p>
+<p><strong>Input</strong><br>输入数据有多组，每组的第一行是三个整数T，S和D，表示有T条路，和草儿家相邻的城市的有S个，草儿想去的地方有D个；<br>接着有T行，每行有三个整数a，b，time,表示a,b城市之间的车程是time小时；(1=&lt;(a,b)&lt;=1000;a,b 之间可能有多条路)<br>接着的第T+1行有S个数，表示和草儿家相连的城市；<br>接着的第T+2行有D个数，表示草儿想去地方。</p>
+<p><strong>Output</strong></p>
+<p>输出草儿能去某个喜欢的城市的最短时间。</p>
+<p><strong>分析：</strong></p>
+<p><a href="http://blog.51cto.com/ahalei/1387799" rel="external nofollow noopener noreferrer" target="_blank">http://blog.51cto.com/ahalei/1387799</a></p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"><span class="keyword">int</span> dis[<span class="number">1005</span>];</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">1005</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dij</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dis[i]=a[<span class="number">0</span>][i];</span><br><span class="line">        vis[i]=<span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    vis[<span class="number">0</span>]=<span class="literal">true</span>;</span><br><span class="line">    dis[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> minn=INF;</span><br><span class="line">        <span class="keyword">int</span> p;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!vis[j]&amp;&amp;dis[j]&lt;minn)</span><br><span class="line">            &#123;</span><br><span class="line">                minn=dis[p=j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        vis[p]=<span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(minn==INF) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!vis[j]&amp;&amp;dis[j]&gt;dis[p]+a[p][j])</span><br><span class="line">                dis[j]=dis[p]+a[p][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t,s,d;</span><br><span class="line">    <span class="keyword">int</span> x,y,z;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;t,&amp;s,&amp;d)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        n=<span class="number">0</span>;</span><br><span class="line">        <span class="built_in">memset</span>(a,INF,<span class="keyword">sizeof</span>(a));</span><br><span class="line">        <span class="keyword">while</span>(t--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">            <span class="keyword">if</span>(z&lt;a[x][y])</span><br><span class="line">                a[x][y]=a[y][x]=z;</span><br><span class="line">            n=max(n,max(x,y));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(s--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</span><br><span class="line">            a[<span class="number">0</span>][x]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Dij();</span><br><span class="line">        <span class="keyword">int</span> minn=INF;</span><br><span class="line">        <span class="keyword">while</span>(d--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</span><br><span class="line">            minn=min(minn,dis[x]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,minn);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU-2067-小兔的棋盘（卡塔兰数）"><a href="#HDU-2067-小兔的棋盘（卡塔兰数）" class="headerlink" title="HDU 2067 小兔的棋盘（卡塔兰数）"></a>HDU 2067 小兔的棋盘（卡塔兰数）</h3><p><strong>Problem Description</strong></p>
+<p>小兔的叔叔从外面旅游回来给她带来了一个礼物，小兔高兴地跑回自己的房间，拆开一看是一个棋盘，小兔有所失望。不过没过几天发现了棋盘的好玩之处。从起点(0，0)走到终点(n,n)的最短路径数是C(2n,n),现在小兔又想如果不穿越对角线(但可接触对角线上的格点)，这样的路径数有多少?小兔想了很长时间都没想出来，现在想请你帮助小兔解决这个问题，对于你来说应该不难吧!</p>
+<p><strong>Input</strong></p>
+<p>每次输入一个数n(1&lt;=n&lt;=35)，当n等于－1时结束输入。</p>
+<p><strong>Output</strong></p>
+<p>对于每个输入数据输出路径数，具体格式看Sample。</p>
+<p><strong>分析：</strong></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%A1%94%E5%85%B0%E6%95%B0" rel="external nofollow noopener noreferrer" target="_blank">https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%A1%94%E5%85%B0%E6%95%B0</a></p>
+<p>遇到类似题型带公式即可</p>
+<p>卡特兰数又称卡塔兰数，英文名Catalan number，是<a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=305948" rel="external nofollow noopener noreferrer" target="_blank">组合数学</a>中一个常出现在各种计数问题中出现的<a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=411910" rel="external nofollow noopener noreferrer" target="_blank">数列</a>。由以<a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=43034" rel="external nofollow noopener noreferrer" target="_blank">比利时</a>的数学家欧仁·查理·卡塔兰 (1814–1894)命名，其前几项为 : 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, 208012, 742900, 2674440, 9694845, 35357670, 129644790, 477638700, 1767263190, 6564120420, 24466267020, 91482563640, 343059613650, 1289904147324, 4861946401452, …</p>
+<p>令h(0)=1,h(1)=1，catalan数满足<a href="http://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=10854267&amp;ss_c=ssc.citiao.link" rel="external nofollow noopener noreferrer" target="_blank">递推式</a><a href="http://baike.sogou.com/v9693847.htm#quote1" rel="external nofollow noopener noreferrer" target="_blank">[1]</a>：</p>
+<p>h(n)= h(0)<em>h(n-1)+h(1)</em>h(n-2) + … + h(n-1)h(0) (n&gt;=2)</p>
+<p>例如：h(2)=h(0)<em>h(1)+h(1)</em>h(0)=1<em>1+1</em>1=2</p>
+<p>h(3)=h(0)<em>h(2)+h(1)</em>h(1)+h(2)<em>h(0)=1</em>2+1<em>1+2</em>1=5</p>
+<p>另类递推式<a href="http://baike.sogou.com/v9693847.htm#quote2" rel="external nofollow noopener noreferrer" target="_blank">[2]</a>：</p>
+<p>h(n)=h(n-1)<em>(4</em>n-2)/(n+1);</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   	__int64 a[<span class="number">36</span>];</span><br><span class="line">   	a[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">   	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="number">35</span>;i++)</span><br><span class="line">   		a[i]=a[i<span class="number">-1</span>]*<span class="number">1.0</span>/(i+<span class="number">1</span>)*(<span class="number">4</span>*i<span class="number">-2</span>);</span><br><span class="line">	<span class="comment">//先除再乘，防止溢出。注意要乘1.0.。。。</span></span><br><span class="line">   	<span class="keyword">int</span> n,flag=<span class="number">0</span>;</span><br><span class="line">   	<span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n)&amp;&amp;n&gt;<span class="number">0</span>)</span><br><span class="line">   	&#123;</span><br><span class="line">   		<span class="built_in">printf</span>(<span class="string">"%d %d %I64d\n"</span>,++flag,n,<span class="number">2</span>*a[n]);</span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="HDU2069-Coin-Change-DP-背包"><a href="#HDU2069-Coin-Change-DP-背包" class="headerlink" title="HDU2069 Coin Change(DP 背包)"></a>HDU2069 Coin Change(DP 背包)</h3><p><strong>Problem Description</strong></p>
+<p>Suppose there are 5 types of coins: 50-cent, 25-cent, 10-cent, 5-cent, and 1-cent. We want to make changes with these coins for a given amount of money.</p>
+<p>For example, if we have 11 cents, then we can make changes with one 10-cent coin and one 1-cent coin, or two 5-cent coins and one 1-cent coin, or one 5-cent coin and six 1-cent coins, or eleven 1-cent coins. So there are four ways of making changes for 11 cents with the above coins. Note that we count that there is one way of making change for zero cent.</p>
+<p>Write a program to find the total number of different ways of making changes for any amount of money in cents. Your program should be able to handle up to 100 coins.</p>
+<p><strong>Input</strong></p>
+<p>The input file contains any number of lines, each one consisting of a number ( ≤250 ) for the amount of money in cents.</p>
+<p><strong>Output</strong></p>
+<p>For each input line, output a line containing the number of different ways of making changes with the above 5 types of coins.</p>
+<p><strong>分析：</strong></p>
+<p>动态规划问题，同时也是01背包问题，需要写出状态转换方程然后求解</p>
+<p><a href="https://blog.csdn.net/wzy_1988/article/details/12260343" rel="external nofollow noopener noreferrer" target="_blank">https://blog.csdn.net/wzy_1988/article/details/12260343</a></p>
+<p><strong>代码：</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cctype&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> a[<span class="number">5</span>]=&#123;<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">25</span>,<span class="number">50</span>&#125;;</span><br><span class="line">LL dp[<span class="number">255</span>][<span class="number">101</span>];<span class="comment">//dp[j][k]:用k个硬币组成j值的个数</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n)&#123;</span><br><span class="line">        <span class="comment">//cout&lt;&lt;res[n]&lt;&lt;endl;</span></span><br><span class="line">        <span class="built_in">memset</span>(dp,<span class="number">0</span>,<span class="keyword">sizeof</span>(dp));</span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">1</span>;k&lt;=<span class="number">100</span>;k++)&#123;<span class="comment">//k个硬币</span></span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j=a[i];j&lt;=n;j++)&#123;</span><br><span class="line">                    dp[j][k]+=dp[j-a[i]][k<span class="number">-1</span>];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">100</span>;i++)&#123;</span><br><span class="line">            res+=dp[n][i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;res&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="小技巧："><a href="#小技巧：" class="headerlink" title="小技巧："></a>小技巧：</h3><h5 id="输出控制："><a href="#输出控制：" class="headerlink" title="输出控制："></a>输出控制：</h5><p>c++中用cout输出，要求保留两位小数，比如，输出100，则为100.00</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cout</span>&lt;&lt;setiosflags(ios::fixed)&lt;&lt;setprecision(<span class="number">2</span>)&lt;&lt;<span class="number">456.777</span>&lt;&lt;<span class="built_in">endl</span></span><br></pre></td></tr></table></figure>
+<h5 id="标准开头："><a href="#标准开头：" class="headerlink" title="标准开头："></a>标准开头：</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>,&amp;n,&amp;r)!=EOF)</span><br></pre></td></tr></table></figure>
+<h5 id="16进制数相加："><a href="#16进制数相加：" class="headerlink" title="16进制数相加："></a>16进制数相加：</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">"%I64X%I64X"</span>,&amp;a,&amp;b)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束🎉-------------</div>
+    
+</div>
+      
+    </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的赞助将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wx_reward.jpg" alt="Wayne WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zfb_reward.jpg" alt="Wayne Alipay">
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Wayne
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://leomalik.github.io/HDU 2000-2099入门笔记.html" title="HDU 2000-2099 入门笔记">http://leomalik.github.io/HDU 2000-2099入门笔记.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow noopener noreferrer" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    
+        <i class="fa fa-thumb-tack"></i>
+        <font color="7D26CD">置顶</font>
+        <span class="post-meta-divider">|</span>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"> <i class="fa fa-tag"></i>算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/hello-world.html" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/贪心算法.html" rel="prev" title="贪心算法">
+                贪心算法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+ 	<div id="gitalk-container"></div>
+  
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://i.loli.net/2019/07/13/5d29fa6fbc8f281808.png" alt="Wayne">
+            
+              <p class="site-author-name" itemprop="name">Wayne</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/LeoMalik" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:leo_jiazi@163.com" target="_blank" title="E-Mail" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/32aa9f2d2aba" target="_blank" title="简书" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-book"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/leo_jiazi" target="_blank" title="Instagram" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+          
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/二分法之可能是总结的最好的一篇文章.html" title="二分法之可能是总结的最好的一篇文章" target="_blank">二分法之可能是总结的最好的一篇文章</a>
+          </li>
+        
+          <li>
+            <a href="/java高并发秒杀平台实战记录.html" title="java高并发秒杀平台实战记录" target="_blank">java高并发秒杀平台实战记录</a>
+          </li>
+        
+          <li>
+            <a href="/剑指offer难题总结.html" title="剑指offer难题总结" target="_blank">剑指offer难题总结</a>
+          </li>
+        
+          <li>
+            <a href="/hexo的next主题个性化配置教程.html" title="hexo的next主题个性化配置教程" target="_blank">hexo的next主题个性化配置教程</a>
+          </li>
+        
+          <li>
+            <a href="/二分查找.html" title="二分查找" target="_blank">二分查找</a>
+          </li>
+        
+      </ul>
+    </div>
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-1002-A-B-Problem-two-大数问题"><span class="nav-number">1.</span> <span class="nav-text">HDU 1002 A+B Problem two(大数问题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2018-母牛的故事-递推"><span class="nav-number">2.</span> <span class="nav-text">HDU 2018 母牛的故事(递推)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2031-进制转换-模拟"><span class="nav-number">3.</span> <span class="nav-text">HDU 2031 进制转换(模拟):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2048-神、上帝以及老天爷-错排问题"><span class="nav-number">4.</span> <span class="nav-text">HDU 2048 神、上帝以及老天爷(错排问题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2053-Switch-Game-开灯问题-唯一分解定理"><span class="nav-number">5.</span> <span class="nav-text">HDU 2053 Switch Game(开灯问题,唯一分解定理)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2057-A-B-Again-16进制数相加"><span class="nav-number">6.</span> <span class="nav-text">HDU 2057 A + B Again (16进制数相加)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2062-Subset-sequence（子序列）"><span class="nav-number">7.</span> <span class="nav-text">HDU 2062 Subset sequence（子序列）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2064-汉诺塔Ⅲ（递归）"><span class="nav-number">8.</span> <span class="nav-text">HDU 2064 汉诺塔Ⅲ（递归）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#…HDU-2059-Seraph2012-DP"><span class="nav-number">9.</span> <span class="nav-text">…HDU 2059  Seraph2012 (DP)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2037-今年暑假不AC（贪心）"><span class="nav-number">10.</span> <span class="nav-text">HDU 2037 今年暑假不AC（贪心）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2063-过山车-（二分图的最大匹配、完美匹配和匈牙利算法）"><span class="nav-number">11.</span> <span class="nav-text">HDU 2063 过山车 （二分图的最大匹配、完美匹配和匈牙利算法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2066-一个人的旅行（最短路，多起点多终点，Dijkstra算法-spfa算法）"><span class="nav-number">12.</span> <span class="nav-text">HDU 2066 一个人的旅行（最短路，多起点多终点，Dijkstra算法+spfa算法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU-2067-小兔的棋盘（卡塔兰数）"><span class="nav-number">13.</span> <span class="nav-text">HDU 2067 小兔的棋盘（卡塔兰数）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDU2069-Coin-Change-DP-背包"><span class="nav-number">14.</span> <span class="nav-text">HDU2069 Coin Change(DP 背包)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小技巧："><span class="nav-number">15.</span> <span class="nav-text">小技巧：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#输出控制："><span class="nav-number">15.0.1.</span> <span class="nav-text">输出控制：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标准开头："><span class="nav-number">15.0.2.</span> <span class="nav-text">标准开头：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#16进制数相加："><span class="nav-number">15.0.3.</span> <span class="nav-text">16进制数相加：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wayne</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">40.4k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      访问用户：
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      访问次数：
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '92a5e58542da02db3d2d',
+          clientSecret: '74f4339ef12febe436ab77be74293e16fc851488',
+          repo: 'leomalik.github.io',
+          owner: 'leomalik',
+          admin: ['leomalik'],
+          id: (location.pathname).split("/").pop().substring(0, 49),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("gnTxT3KLxqlK5RIv1rrmCmo4-gzGzoHsz", "9OATHet5su8cwkMb87NP70un");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/vendors/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/vendors/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet" type="text/css">
