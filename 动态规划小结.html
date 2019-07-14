@@ -32,8 +32,8 @@
   
     
     
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <script src="/vendors/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/vendors/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -61,7 +61,9 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
 
 
 
@@ -69,7 +71,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
@@ -102,13 +106,13 @@
 
 
 
-<meta name="description" content="动态规划的四个组成部分：">
+<meta name="description" content="动态规划的四个组成部分： 1.确定状态，化为子问题 2.转移方程 3.边界情况 4.计算顺序">
 <meta name="keywords" content="算法,动态规划">
 <meta property="og:type" content="article">
 <meta property="og:title" content="动态规划小结">
-<meta property="og:url" content="http://leomalik.github.io/动态规划小结_new.html">
+<meta property="og:url" content="http://leomalik.github.io/动态规划小结.html">
 <meta property="og:site_name" content="Wayne&#39;s Blog">
-<meta property="og:description" content="动态规划的四个组成部分：">
+<meta property="og:description" content="动态规划的四个组成部分： 1.确定状态，化为子问题 2.转移方程 3.边界情况 4.计算顺序">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058snod1oj213u0j4ai1.jpg">
@@ -117,10 +121,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g059v1i6ebj209k0anq44.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058up3cq6j20z80g9n1g.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082gy1g05913xqwtj20mi0ctjur.jpg">
-<meta property="og:updated_time" content="2019-07-07T11:24:03.088Z">
+<meta property="og:updated_time" content="2019-07-14T08:13:26.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划小结">
-<meta name="twitter:description" content="动态规划的四个组成部分：">
+<meta name="twitter:description" content="动态规划的四个组成部分： 1.确定状态，化为子问题 2.转移方程 3.边界情况 4.计算顺序">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg">
 
 
@@ -151,7 +155,7 @@
 
 
 
-  <link rel="canonical" href="http://leomalik.github.io/动态规划小结_new.html">
+  <link rel="canonical" href="http://leomalik.github.io/动态规划小结.html">
 
 
 
@@ -331,7 +335,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/动态规划小结_new.html">
+    <link itemprop="mainEntityOfPage" href="http://leomalik.github.io/动态规划小结.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wayne">
@@ -377,8 +381,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-07-07T19:24:03+08:00">
-                2019-07-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-07-14T16:13:26+08:00">
+                2019-07-14
               </time>
             
           </span>
@@ -413,7 +417,7 @@
 
           
           
-             <span id="/动态规划小结_new.html" class="leancloud_visitors" data-flag-title="动态规划小结">
+             <span id="/动态规划小结.html" class="leancloud_visitors" data-flag-title="动态规划小结">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -438,7 +442,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  857
+                  882
                 </span>
               
 
@@ -476,8 +480,12 @@
 
       
         <p>动态规划的四个组成部分：</p>
-<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
+<p>1.确定状态，化为子问题</p>
+<p>2.转移方程</p>
+<p>3.边界情况</p>
+<p>4.计算顺序</p>
 <a id="more"></a>
+<p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058s33bzhj20nh0jt47e.jpg" alt=""></p>
 <p>动态规划和递归效率的比较：</p>
 <p>如图所示，递归会重复计算，效率极差：</p>
 <p><img src="https://raw.githubusercontent.com/LeoMalik/ImgBed/master/img/c364e082ly1g058snod1oj213u0j4ai1.jpg" alt=""></p>
@@ -583,7 +591,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://leomalik.github.io/动态规划小结_new.html" title="动态规划小结">http://leomalik.github.io/动态规划小结_new.html</a>
+    <a href="http://leomalik.github.io/动态规划小结.html" title="动态规划小结">http://leomalik.github.io/动态规划小结.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -955,32 +963,32 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
   
 
 
@@ -1504,11 +1512,11 @@
   
   
   
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+  <link rel="stylesheet" href="/vendors/needsharebutton/needsharebutton.css">
 
   
   
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script src="/vendors/needsharebutton/needsharebutton.js"></script>
 
   <script>
     
