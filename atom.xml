@@ -6,7 +6,7 @@
   <link href="https://leomalik.github.io/atom.xml" rel="self"/>
   
   <link href="https://leomalik.github.io/"/>
-  <updated>2021-04-10T10:14:36.680Z</updated>
+  <updated>2021-04-10T15:23:57.061Z</updated>
   <id>https://leomalik.github.io/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="https://leomalik.github.io/2021/04/10/HelloWorld/"/>
     <id>https://leomalik.github.io/2021/04/10/HelloWorld/</id>
     <published>2021-04-10T10:08:16.000Z</published>
-    <updated>2021-04-10T10:14:36.680Z</updated>
+    <updated>2021-04-10T15:23:57.061Z</updated>
     
-    <content type="html"><![CDATA[<p>HelloWorld~ hexo! 🥃</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="HelloWorld-hexo-🥃"><a href="#HelloWorld-hexo-🥃" class="headerlink" title="HelloWorld~ hexo! 🥃"></a>HelloWorld~ hexo! 🥃</h1>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;HelloWorld~ hexo! 🥃&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;HelloWorld-hexo-🥃&quot;&gt;&lt;a href=&quot;#HelloWorld-hexo-🥃&quot; class=&quot;headerlink&quot; title=&quot;HelloWorld~ hexo! 🥃&quot;&gt;&lt;/a&gt;HelloWorld~ hexo! 🥃&lt;/h1&gt;</summary>
       
     
     
