@@ -121,3 +121,6 @@ baidu_url_submit:
   host: leomalik.github.io    # 在百度站长平台中添加的域名
   token: cKZlFPZ7IcwkqdHo      # 秘钥
   path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
+
+# compress all static files
+all_minifier: true
