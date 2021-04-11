@@ -1,11 +1,11 @@
 ---
-title: HelloWorld
-date: 2021-04-10 18:08:16
+title: Hexo博客搭建教程
 tags:
-- helloworld
-- hexo
-categories: hexo
-comments:
+  - hexo
+categories:
+  - hexo
+date: 2021-04-11 00:19:51
+comments: false
 ---
 
 # HelloWorld~ hexo! 🥃
