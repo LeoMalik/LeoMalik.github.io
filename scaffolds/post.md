@@ -5,8 +5,9 @@ tags:
 - 
 categories:
 - 
-index_img: 
-comments:  
+index_img:
+banner_img: 
+comments: true
 ---
 
 
